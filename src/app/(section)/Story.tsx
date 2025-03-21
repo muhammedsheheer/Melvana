@@ -27,7 +27,7 @@ const Story: React.FC = () => {
         </div>
         <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:items-end md:justify-end">
           <p className="font-playfair w-full max-w-[300px] text-center text-sm font-[400] lowercase text-[#194129] md:text-right md:text-base">
-            Whether you're here for a family meal, a casual coffee, or a special
+            Whether you`re here for a family meal, a casual coffee, or a special
             occasion, we ensure a delightful dining experience filled with
             tradition and taste. Join us and savor the essence of Turkey right
             in the heart of Bolton.

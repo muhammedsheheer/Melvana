@@ -20,14 +20,12 @@ const Footer = ({}) => {
           >
             Menu
           </Link>
-
           <Link
             href={"/about-us"}
             className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
           >
             About
           </Link>
-
           <Link href={"/"}>
             <Image
               src={"/images/home/hero/logo.png"}
@@ -38,7 +36,7 @@ const Footer = ({}) => {
             />
           </Link>
 
-          <Link
+          {/* <Link
             href={""}
             className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
           >
@@ -49,6 +47,18 @@ const Footer = ({}) => {
             className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
           >
             Reviews
+          </Link> */}
+          <Link
+            href={"/table-booking"}
+            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
+          >
+            Booking
+          </Link>
+          <Link
+            href={"/contact"}
+            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
+          >
+            Contact
           </Link>
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
@@ -103,6 +113,12 @@ const Footer = ({}) => {
                 className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
               >
                 +44 1204 860038{" "}
+              </Link>
+              <Link
+                href={"mailto:h.jiva@mevlanabolton.com"}
+                className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
+              >
+                h.jiva@mevlanabolton.com{" "}
               </Link>
             </div>
           </div>

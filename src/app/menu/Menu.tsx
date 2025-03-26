@@ -247,11 +247,11 @@ export default function Menu() {
           className="relative hidden h-[30vh] w-full bg-black md:flex"
           style={{
             background:
-              "linear-gradient(170deg, rgba(0, 0, 0, 0.00) 7.51%, rgba(0, 0, 0, 0.80) 92.93%), url('/images/menuhero.png') lightgray 50% / cover no-repeat",
+              "linear-gradient(170deg, rgba(0, 0, 0, 0.00) 7.51%, rgba(0, 0, 0, 0.80) 92.93%), url('/images/about-us/image6.jpg') lightgray 50% / cover no-repeat",
           }}
         >
           <div className="absolute left-0 top-0 flex h-full w-full items-end justify-end px-12 py-12">
-            <Link href="/pdf/dine-in-menu.pdf" target="_blank">
+            <Link href="" target="_blank">
               <Button className="flex items-center justify-center gap-2 rounded-none bg-menuprimary px-5 py-6 text-lg font-[600] text-menuforeground hover:bg-buttonhover">
                 <Image src="/images/pdf.svg" width={23} height={29} alt="pdf" />
                 <span className="leading-none">Download Menu</span>
@@ -394,7 +394,7 @@ export default function Menu() {
                 </div>
               )}
             <Button
-              className="font-manrope relative flex w-full items-center justify-between rounded-none bg-menuprimary py-6 text-lg font-bold uppercase text-menuforeground hover:bg-buttonhover disabled:bg-buttondisabled disabled:text-menuforeground"
+              className="relative flex w-full items-center justify-between rounded-none bg-menuprimary py-6 font-manrope text-lg font-bold uppercase text-menuforeground hover:bg-buttonhover disabled:bg-buttondisabled disabled:text-menuforeground"
               onClick={() => router.push("/checkout")}
               disabled={
                 cartItems.length === 0 ||

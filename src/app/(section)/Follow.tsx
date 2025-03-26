@@ -45,8 +45,8 @@ const Follow: React.FC = () => {
                 className="w-14"
               />
               <Link
-                className="font-marcellus text-center text-3xl font-[400] uppercase text-[#A98151] md:text-4xl md:tracking-[-1px]"
-                href={""}
+                className="text-center font-marcellus text-3xl font-[400] uppercase text-[#A98151] md:text-4xl md:tracking-[-1px]"
+                href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
                 target="_blank"
               >
                 @mevlana_bolton

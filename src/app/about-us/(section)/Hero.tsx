@@ -11,21 +11,22 @@ const Hero = ({}) => {
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
               <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#194129] lg:text-6xl">
-                Welcome to Nova <br />A Symphony of Flavors
+                Welcome to Mevlana <br />A Symphony of Flavors
               </h1>
               <p className="font-manrope font-normal text-[#679895]">
-                At Nova, every dish is a masterpiece, crafted with passion and
-                precision. From handpicked ingredients to expertly curated
-                recipes, we bring you a dining experience that blends artistry
-                with flavor. Whether you`re savoring a signature entrée or
-                indulging in a decadent treat, each bite tells a story of
-                quality, innovation, and culinary excellence.
+                At Mevlana, dining is more than a meal—it is a journey of the
+                soul. Each dish is crafted with love and devotion, embracing the
+                wisdom of tradition and the beauty of shared moments. From the
+                finest ingredients to time-honored recipes, we invite you to
+                taste the harmony of flavors that nourish both body and spirit.
+                Let every bite be a reflection of unity, warmth, and the poetry
+                of life.
               </p>
             </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:mt-16 lg:w-1/2">
             <Image
-              src="/images/about-us/image1.jpeg"
+              src="/images/about-us/image1.jpg"
               width={951}
               height={975}
               alt="hero"

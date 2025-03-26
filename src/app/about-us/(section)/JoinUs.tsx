@@ -14,16 +14,17 @@ const JoinUs = ({}) => {
       <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
           <h1 className="font-oswald max-w-[500px] text-center text-5xl leading-[60px] text-[#fff]">
-            Join Us for an
+            Gather in Harmony
             <br />
-            Unforgettable Meal
+            Savor the Moment
           </h1>
           <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
-            Whether it`s an intimate dinner or a grand celebration, Nova invites
-            you to indulge in an exceptional culinary journey. From expertly
-            crafted flavors to hand-selected ingredients, every dish reflects
-            our passion for excellence. Immerse yourself in a dining experience
-            where innovation meets tradition, and every bite tells a story.
+            In the spirit of Mevlana’s wisdom, we welcome you to a place where
+            food is more than nourishment—it is an expression of unity, love,
+            and gratitude. Whether you seek a quiet evening of reflection or a
+            joyful gathering with loved ones, each dish is prepared with care,
+            each flavor tells a story, and every moment is an invitation to
+            embrace the present.
           </p>
           <Link href={"/table-booking"}>
             <Button

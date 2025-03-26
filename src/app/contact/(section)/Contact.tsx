@@ -91,13 +91,13 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
                     <p className="text-[#679895]">
-                      2 Kendal Ave, London W3 0PA,
+                      Horsfield St, Bolton BL3 4LU,
                       <br /> United Kingdom
                     </p>
                   </Link>
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
                     <p className="flex items-center gap-2 text-sm text-[#679895]">
                       <span>Get Direction</span>
                       <ArrowRight className="text-[#679895]" />
@@ -122,19 +122,27 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+442035001710" className="text-[#679895]">
-                    +44 20 3500 1710{" "}
+                  <Link href="tel:+441204860038" className="text-[#679895]">
+                    +44 1204 860038{" "}
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
-                <Link href={""} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#679895]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link
+                  href={
+                    "https://www.tripadvisor.in/ShowUserReviews-g187053-d30464254-r985280947-Mevlana_Bolton-Bolton_Greater_Manchester_England.html"
+                  }
+                  target="_blank"
+                >
                   <Icons.unknown className="text-[#679895]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
                   <Icons.google className="text-[#679895]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -232,7 +240,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3518235577612!2d-0.282350023528942!3d51.525106571817304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611828d8d4ff7%3A0xd0a626f080e14845!2sNova%20Park%20Royal!5e0!3m2!1sen!2sin!4v1740603246277!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.2043845604217!2d-2.467085523398032!3d53.5677202723543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba75750cbd5b9%3A0xfcde2517b593e215!2sMevlana%2C%20Bolton!5e1!3m2!1sen!2sin!4v1742995261619!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -243,7 +251,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image5.jpeg"
+          src="/images/about-us/image3.jpg"
           alt="bottom"
           width={966}
           height={96}

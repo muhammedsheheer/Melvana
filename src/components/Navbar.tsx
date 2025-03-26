@@ -56,8 +56,8 @@ const Navbar = ({
               href={"/"}
               className={
                 pathname === "/"
-                  ? "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
               Home
@@ -66,8 +66,8 @@ const Navbar = ({
               href={"/menu"}
               className={
                 pathname === "/"
-                  ? "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
               Menu
@@ -76,8 +76,8 @@ const Navbar = ({
               href={""}
               className={
                 pathname === "/"
-                  ? "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
               FOOD & DRINK
@@ -86,8 +86,8 @@ const Navbar = ({
               href={"/about-us"}
               className={
                 pathname === "/"
-                  ? "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
               About
@@ -97,8 +97,8 @@ const Navbar = ({
               href={"/contact"}
               className={
                 pathname === "/"
-                  ? "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "font-playfair text-center text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
               Contact

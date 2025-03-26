@@ -32,38 +32,38 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
           <SheetDescription className="flex w-full flex-col items-start justify-start gap-7 pt-14">
             <Link
               href="/"
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Home
             </Link>
             <Link
               href="/menu"
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Menu
             </Link>
             <Link
               href=""
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Food & Drinks
             </Link>
 
             <Link
               href="/about-us"
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Contact
             </Link>
             <Link
               href="/table-booking"
-              className="font-playfair flex w-full justify-start p-0 text-2xl font-normal text-[#323232]"
+              className="flex w-full justify-start p-0 font-playfair text-2xl font-normal text-[#323232]"
             >
               Table Booking
             </Link>

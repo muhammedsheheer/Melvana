@@ -75,7 +75,7 @@ const Footer = ({}) => {
             <Icons.facebook className="text-[#A98151]" />
           </Link>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4 md:mr-[8%] md:flex-row md:gap-12">
+        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-12">
           <div className="flex flex-col justify-center gap-28 md:flex-row md:justify-between">
             <div className="flex flex-col items-center justify-center gap-2">
               <h6 className="font-playfair text-base font-[600] capitalize tracking-[0.48px] text-[#fff] md:text-lg">

@@ -72,7 +72,7 @@ const Navbar = ({
             >
               Menu
             </Link>
-            <Link
+            {/* <Link
               href={""}
               className={
                 pathname === "/"
@@ -81,7 +81,7 @@ const Navbar = ({
               }
             >
               FOOD & DRINK
-            </Link>
+            </Link> */}
             <Link
               href={"/about-us"}
               className={

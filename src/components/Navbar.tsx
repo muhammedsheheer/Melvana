@@ -55,7 +55,9 @@ const Navbar = ({
             <Link
               href={"/"}
               className={
-                pathname === "/"
+                pathname === "/" ||
+                pathname === "/menu" ||
+                pathname === "/table-booking"
                   ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
                   : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
@@ -65,7 +67,9 @@ const Navbar = ({
             <Link
               href={"/menu"}
               className={
-                pathname === "/"
+                pathname === "/" ||
+                pathname === "/menu" ||
+                pathname === "/table-booking"
                   ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
                   : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
@@ -85,7 +89,9 @@ const Navbar = ({
             <Link
               href={"/about-us"}
               className={
-                pathname === "/"
+                pathname === "/" ||
+                pathname === "/menu" ||
+                pathname === "/table-booking"
                   ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
                   : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
@@ -96,7 +102,9 @@ const Navbar = ({
             <Link
               href={"/contact"}
               className={
-                pathname === "/"
+                pathname === "/" ||
+                pathname === "/menu" ||
+                pathname === "/table-booking"
                   ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
                   : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }

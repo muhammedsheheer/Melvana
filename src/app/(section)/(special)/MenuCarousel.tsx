@@ -312,7 +312,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla-menu__container">
               {slides.map((modelData, index) => (
                 <div className="embla-menu__slide" key={index}>
-                  <div className="embla-menu__slide__number h-full w-full rounded-t-full bg-[#fff] px-4 py-20">
+                  <div className="embla-menu__slide__number h-full w-full bg-[url('/images/home/reserve/bg.png')] bg-center px-4 py-20">
+                    {" "}
                     <ModelBox
                       src={modelData.modelPath.glb}
                       width="400px"
@@ -334,7 +335,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               // }}
             >
               {slides[selectedIndex]?.name && (
-                <p className="font-playfair min-h-[80px] max-w-[300px] text-center text-4xl text-white">
+                <p className="min-h-[80px] max-w-[300px] text-center font-playfair text-4xl text-white">
                   {formatModelName(slides[selectedIndex]?.name)}
                 </p>
               )}
@@ -352,7 +353,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               disabled={nextBtnDisabled}
             />
           </div>
-          <p className="font-playfair flex items-center text-3xl">
+          <p className="flex items-center font-playfair text-3xl">
             <span className="text-primary">{selectedIndex + 1}</span>/{" "}
             {scrollSnaps.length}
           </p>

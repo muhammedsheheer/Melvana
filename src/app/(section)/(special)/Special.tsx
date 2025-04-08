@@ -13,7 +13,7 @@ const Special = ({}) => {
   return (
     <section className="relative flex h-full w-full justify-center bg-[#A98151] py-12">
       <div className="absolute bottom-[10%] right-[10%] hidden md:block">
-        <p className="font-playfair w-full max-w-[240px] text-sm font-[400] lowercase text-[#fff]">
+        <p className="w-full max-w-[240px] font-playfair text-sm font-[400] lowercase text-[#fff]">
           Our menu celebrates rich, time-honored flavors, from succulent grilled
           meats and vibrant mezzes to decadent desserts and aromatic Turkish
           coffee.
@@ -25,7 +25,7 @@ const Special = ({}) => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
               <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
-                <h1 className="font-marcellus z-10 text-center text-4xl font-[400] uppercase text-[#fff] md:text-6xl">
+                <h1 className="z-10 text-center font-marcellus text-4xl font-[400] uppercase text-[#fff] md:text-6xl">
                   Mevlana signature specials{" "}
                 </h1>
               </div>

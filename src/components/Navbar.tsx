@@ -104,7 +104,11 @@ const Navbar = ({
               Contact
             </Link>
           </div>
-          <div></div>
+          <div>
+            <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:px-7 md:py-7 md:text-sm">
+              <Link href={"/table-booking"}>Book Now</Link>
+            </Button>
+          </div>
         </div>
       </div>
 

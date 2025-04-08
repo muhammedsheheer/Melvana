@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         <h1 className="text-center font-marcellus text-7xl font-[400] uppercase text-[#A98151] md:text-[150px] md:tracking-[-6px]">
           MEVLANA
         </h1>
-        <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:px-7 md:py-7 md:text-sm">
+        <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:hidden md:px-7 md:py-7 md:text-sm">
           <Link href={"/table-booking"}>Book Now</Link>
         </Button>
       </div>

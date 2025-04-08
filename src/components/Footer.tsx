@@ -24,7 +24,7 @@ const Footer = ({}) => {
             href={"/about-us"}
             className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
           >
-            About
+            Our Story
           </Link>
           <Link href={"/"}>
             <Image

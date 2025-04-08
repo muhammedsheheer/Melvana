@@ -90,7 +90,7 @@ const Navbar = ({
                   : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
               }
             >
-              About
+              Our Story
             </Link>
 
             <Link

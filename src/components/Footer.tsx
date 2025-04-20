@@ -115,10 +115,10 @@ const Footer = ({}) => {
                 +44 1204 860038{" "}
               </Link>
               <Link
-                href={"mailto:h.jiva@mevlanabolton.com"}
+                href={"mailto:info@mevlanabolton.com"}
                 className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
               >
-                h.jiva@mevlanabolton.com{" "}
+                info@mevlanabolton.com
               </Link>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Sidebar from "./SideBar";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import clsx from "clsx";
 
 const Navbar = ({
   position = "static",
@@ -147,11 +148,19 @@ const Navbar = ({
 export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
+  const pathname = usePathname();
+
   return (
-    <div className="equalizer-icon rotate text-[#C0A58A]">
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
+    <div className="equalizer-icon rotate">
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+      ></div>
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+      ></div>
+      <div
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+      ></div>
     </div>
   );
 };

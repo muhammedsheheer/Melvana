@@ -7,18 +7,19 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center"
       style={{
-        backgroundImage: `url('/images/about-us/image4.jpg')`,
+        backgroundImage: `url('/images/about-us/image8.jpg')`,
         backgroundSize: "cover",
       }}
     >
-      <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="z-10 flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
-          <h1 className="font-oswald max-w-[500px] text-center text-5xl leading-[60px] text-[#fff]">
+          <h1 className="max-w-[500px] text-center font-marcellus text-5xl leading-[60px] text-[#fff]">
             Gather in Harmony
             <br />
             Savor the Moment
           </h1>
-          <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
+          <p className="max-w-[450px] text-center font-playfair font-[500] leading-[160%] text-[#ffff]">
             In the spirit of Mevlana’s wisdom, we welcome you to a place where
             food is more than nourishment—it is an expression of unity, love,
             and gratitude. Whether you seek a quiet evening of reflection or a

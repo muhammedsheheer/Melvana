@@ -14,7 +14,7 @@ const JoinUs = ({}) => {
       <div className="absolute inset-0 bg-black/50" />
       <div className="z-10 flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
-          <h1 className="max-w-[500px] text-center font-marcellus text-5xl leading-[60px] text-[#fff]">
+          <h1 className="max-w-[500px] text-center font-marcellus text-4xl text-[#fff] md:text-5xl md:leading-[60px]">
             Gather in Harmony
             <br />
             Savor the Moment
@@ -30,7 +30,7 @@ const JoinUs = ({}) => {
           <Link href={"/table-booking"}>
             <Button
               variant="outline"
-              className="group w-fit items-center gap-[1.19rem] border-[#fff] bg-transparent px-7 py-7 font-semibold uppercase text-[#fff] hover:bg-[#000]"
+              className="group w-fit items-center gap-[1.19rem] border-[#fff] bg-transparent px-6 py-6 font-semibold uppercase text-[#fff] hover:bg-[#000] md:px-7 md:py-7"
             >
               Book Now{" "}
               <Icons.rightArrow className="text-[#fff] duration-300 ease-in-out group-hover:translate-x-1 group-hover:text-primary-foreground" />

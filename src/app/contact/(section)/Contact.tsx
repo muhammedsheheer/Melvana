@@ -78,7 +78,7 @@ const Contact = ({}) => {
               {/* <p className="font-bai text-lg leading-[4px] text-[#194129]">
                 Contact Us
               </p> */}
-              <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#194129] lg:text-5xl">
+              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#194129] md:leading-[50px] lg:text-5xl">
                 Get in
                 <br /> Touch
               </h1>
@@ -92,14 +92,14 @@ const Contact = ({}) => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="text-[#679895]">
+                    <p className="font-playfair text-[#679895]">
                       Horsfield St, Bolton BL3 4LU,
                       <br /> United Kingdom
                     </p>
                   </Link>
                   <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
                     <p className="flex items-center gap-2 text-sm text-[#679895]">
-                      <span>Get Direction</span>
+                      <span className="font-playfair">Get Direction</span>
                       <ArrowRight className="text-[#679895]" />
                     </p>
                   </Link>
@@ -122,7 +122,10 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+441204860038" className="text-[#679895]">
+                  <Link
+                    href="tel:+441204860038"
+                    className="font-playfair text-[#679895]"
+                  >
                     +44 1204 860038{" "}
                   </Link>
                 </div>
@@ -210,7 +213,7 @@ const Contact = ({}) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel className="text-[#679895]">
+                            <FormLabel className="font-playfair text-[#679895]">
                               Reason for contacting (optional)
                             </FormLabel>
                             <FormControl>

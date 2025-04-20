@@ -70,7 +70,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           </div>
         </div>
       </div>
-      <p className="w-full text-2xl font-semibold text-[#323232]">
+      <p className="w-full font-marcellus text-2xl font-semibold text-[#323232]">
         Complete your request
       </p>
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

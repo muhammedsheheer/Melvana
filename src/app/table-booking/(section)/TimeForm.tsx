@@ -145,10 +145,10 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center gap-3">
-      <p className="text-3xl font-semibold text-[#323232]">
+      <p className="font-marcellus text-3xl font-semibold text-[#323232]">
         Request a reservation
       </p>
-      <p className="text-[#323232]">
+      <p className="font-playfair text-[#323232]">
         Select your details and we`ll try get the best seats for you
       </p>
       <Form {...form}>

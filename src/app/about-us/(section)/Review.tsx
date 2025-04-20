@@ -84,7 +84,7 @@ const Reviews = ({}) => {
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-t-full py-12 md:py-44 md:pt-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <div className="flex flex-col items-center justify-center gap-2">
-            <h6 className="text-center font-marcellus text-5xl font-[400] uppercase text-[#194129] md:text-6xl">
+            <h6 className="text-center font-marcellus text-4xl font-[400] uppercase text-[#194129] md:text-6xl">
               Reserve <br />
               Your Table
             </h6>

@@ -312,7 +312,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla-menu__container">
               {slides.map((modelData, index) => (
                 <div className="embla-menu__slide" key={index}>
-                  <div className="embla-menu__slide__number h-full w-full bg-[url('/images/home/reserve/bg.png')] bg-center px-4 py-20">
+                  <div className="embla-menu__slide__number h-full w-full px-4 py-20">
                     {" "}
                     <ModelBox
                       src={modelData.modelPath.glb}

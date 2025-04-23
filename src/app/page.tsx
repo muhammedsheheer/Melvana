@@ -15,9 +15,9 @@ export default function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Navbar position="absolute" />
         <Hero />
+        <Special />
         <Story />
         <Highlights />
-        <Special />
         <Reserve />
         <Reviews />
         <Follow />

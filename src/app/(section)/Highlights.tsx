@@ -64,7 +64,7 @@ const Highlights: React.FC = () => {
               className="z-50 h-auto w-full md:h-full"
             />
             <h3 className="text-center font-playfair text-lg font-[500] capitalize text-[#fff]">
-              SAKSUKA{" "}
+              BEYTI{" "}
             </h3>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/4 md:gap-6">

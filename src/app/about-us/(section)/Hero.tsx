@@ -14,13 +14,13 @@ const Hero = ({}) => {
                 Welcome to Mevlana <br />A Symphony of Flavors
               </h1>
               <p className="font-playfair font-normal text-[#679895]">
-                At Mevlana, dining is more than a meal—it is a journey of the
-                soul. Each dish is crafted with love and devotion, embracing the
-                wisdom of tradition and the beauty of shared moments. From the
+                At Mevlana, dining is more than a meal—it`s a soulful journey.
+                Every dish is lovingly crafted with devotion, blending the
+                wisdom of tradition with the beauty of shared moments. From the
                 finest ingredients to time-honored recipes, we invite you to
-                taste the harmony of flavors that nourish both body and spirit.
-                Let every bite be a reflection of unity, warmth, and the poetry
-                of life.
+                savor a harmony of flavors that nourish both body and spirit.
+                Let each bite reflect unity, warmth, and the poetic essence of
+                life.
               </p>
             </div>
           </div>

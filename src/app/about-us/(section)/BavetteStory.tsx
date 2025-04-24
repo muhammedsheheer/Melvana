@@ -26,19 +26,23 @@ const BavetteStory = ({}) => {
               to Perfection{" "}
             </h1>
             <p className="max-w-[450px] text-center font-playfair font-light leading-[160%] text-[#679895] md:text-start">
-              What began as a vision—a quest for deeper connection through
-              food—has blossomed into Mevlana, a place where flavors and souls
-              unite. Inspired by the wisdom of Rumi, our journey is not just
-              about preparing meals, but about creating an experience that
-              nourishes both heart and spirit.
-              <br /> From humble beginnings to a sanctuary for those who seek
-              meaning in every taste, our devotion to craftsmanship, warmth, and
-              sincerity remains unchanged. Every ingredient is chosen with care,
-              every dish is prepared with love, and every bite whispers the
-              poetry of tradition and togetherness.
-              <br /> At Mevlana, we do not simply serve food—we offer a moment
-              of reflection, a taste of harmony, and a celebration of life’s
-              boundless beauty.
+              <p className="max-w-[450px] text-center font-playfair font-light leading-[160%] text-[#679895] md:text-start">
+                What began as a vision—a quest for deeper connection through
+                food—has blossomed into Mevlana, a place where flavors and souls
+                intertwine. Inspired by the wisdom of Rumi, our journey is not
+                merely about preparing meals, but about creating an experience
+                that nourishes both the heart and the spirit.
+                <br />
+                From humble beginnings to a sanctuary for those who seek meaning
+                in every taste, our commitment to craftsmanship, warmth, and
+                sincerity remains unwavering. Every ingredient is chosen with
+                care, every dish is prepared with love, and each bite carries
+                the poetry of tradition and togetherness.
+                <br />
+                At Mevlana, we don’t just serve food—we offer moments of
+                reflection, a taste of harmony, and a celebration of life’s
+                boundless beauty.
+              </p>
             </p>
           </div>
         </div>

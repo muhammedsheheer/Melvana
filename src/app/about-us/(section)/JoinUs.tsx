@@ -17,15 +17,15 @@ const JoinUs = ({}) => {
           <h1 className="max-w-[500px] text-center font-marcellus text-4xl text-[#fff] md:text-5xl md:leading-[60px]">
             Gather in Harmony
             <br />
-            Savor the Moment
+            Savor Every Moment
           </h1>
           <p className="max-w-[450px] text-center font-playfair font-[500] leading-[160%] text-[#ffff]">
             In the spirit of Mevlana’s wisdom, we welcome you to a place where
-            food is more than nourishment—it is an expression of unity, love,
-            and gratitude. Whether you seek a quiet evening of reflection or a
-            joyful gathering with loved ones, each dish is prepared with care,
-            each flavor tells a story, and every moment is an invitation to
-            embrace the present.
+            food transcends nourishment—it becomes an expression of unity, love,
+            and gratitude. Whether you’re seeking a quiet evening of reflection
+            or a joyful gathering with loved ones, each dish is prepared with
+            care, every flavor tells a story, and every moment invites you to
+            embrace the present with open heart and soul.
           </p>
           <Link href={"/table-booking"}>
             <Button

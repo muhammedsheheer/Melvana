@@ -12,13 +12,19 @@ const Special = ({}) => {
   const { modelData } = useRestaurant();
   return (
     <section className="relative flex h-full w-full justify-center bg-[#A98151] py-12">
-      <div className="absolute bottom-[10%] right-[10%] hidden md:block">
-        <p className="w-full max-w-[240px] font-playfair text-sm font-[400] lowercase text-[#fff]">
-          Our menu celebrates rich, time-honored flavors, from succulent grilled
-          meats and vibrant mezzes to decadent desserts and aromatic Turkish
-          coffee.
-        </p>
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
+      <div
+        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+        style={{
+          backgroundImage: "url('/images/frame.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat",
+        }}
+      ></div>
       <div className="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden"></div>
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
         <div className="flex w-full flex-col items-center justify-center gap-3 md:flex-row">

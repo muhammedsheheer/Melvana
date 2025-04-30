@@ -6,7 +6,12 @@ import { motion } from "framer-motion";
 
 const Reserve: React.FC = () => {
   return (
-    <section className="h-full w-full">
+    <section className="relative h-full w-full">
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="relative h-full w-full">
         <div className="absolute bottom-0 right-1/2 w-full translate-x-1/2 px-4 md:w-[550px]">
           <motion.div

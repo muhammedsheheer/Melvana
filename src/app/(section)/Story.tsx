@@ -43,6 +43,11 @@ const Story: React.FC = () => {
     <section
       ref={sectionRef}
       className="relative h-full w-full bg-[#fff] px-4 py-12 md:px-14 md:py-24"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
     >
       <div className="absolute left-1/2 top-20 z-10 hidden -translate-x-1/2 md:block">
         <div className="flex flex-col items-center justify-center gap-4">

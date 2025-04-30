@@ -19,7 +19,14 @@ const imageVariants = {
 
 const Follow: React.FC = () => {
   return (
-    <section className="relative h-full w-full bg-[#fff] pb-4 pt-12">
+    <section
+      className="relative h-full w-full bg-[#fff] pb-4 pt-12"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <div className="flex flex-col gap-8 md:gap-20">
         <div className="flex w-full flex-col gap-4 px-4 md:px-0">
           <div className="flex w-full flex-col gap-4 md:flex-row">

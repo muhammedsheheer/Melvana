@@ -27,7 +27,14 @@ const Reviews = () => {
   };
 
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#fff] pb-10">
+    <section
+      className="relative flex h-full w-full justify-center bg-[#fff] pb-10"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-t-full py-12 md:py-44 md:pt-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <div className="flex flex-col items-center justify-center gap-2">

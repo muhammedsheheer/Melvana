@@ -7,6 +7,19 @@ import { motion } from "framer-motion";
 const Highlights: React.FC = () => {
   return (
     <section className="relative h-full w-full bg-[#194129] px-4 py-8 md:px-16 md:py-20">
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+      <div
+        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+        style={{
+          backgroundImage: "url('/images/frame.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat",
+        }}
+      ></div>
       <div className="absolute left-20 right-20 top-16 hidden md:block">
         <h1 className="hidden text-center font-marcellus text-7xl font-[400] uppercase text-[#fff] md:block">
           An Elevated Turkish Dining <br /> Experience

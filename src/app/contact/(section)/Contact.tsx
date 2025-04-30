@@ -68,12 +68,24 @@ const Contact = ({}) => {
 
   return (
     <section
-      className="flex h-full w-full flex-col items-center justify-center bg-[#fff]"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#f7f4ed] pt-20 md:pt-60"
       id="contact"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
     >
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
-          <div className="flex w-full flex-col gap-8 bg-[#fff] px-6 lg:w-1/2 lg:px-28">
+          <div
+            className="flex w-full flex-col gap-8 bg-[#f7f4ed] px-6 lg:w-1/2 lg:px-28"
+            style={{
+              backgroundImage: "url('/images/aboutbg.png')",
+              backgroundSize: "contain",
+              backgroundRepeat: "repeat",
+            }}
+          >
             <div className="flex flex-col gap-8">
               {/* <p className="font-bai text-lg leading-[4px] text-[#194129]">
                 Contact Us
@@ -154,7 +166,14 @@ const Contact = ({}) => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col bg-[#fff] lg:w-1/2 lg:items-center lg:justify-center">
+          <div
+            className="flex w-full flex-col bg-[#f7f4ed] lg:w-1/2 lg:items-center lg:justify-center"
+            style={{
+              backgroundImage: "url('/images/aboutbg.png')",
+              backgroundSize: "contain",
+              backgroundRepeat: "repeat",
+            }}
+          >
             <div className="w-full px-3 lg:w-4/5 lg:px-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="h-full">

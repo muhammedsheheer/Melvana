@@ -200,7 +200,7 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
                       <FormControl>
                         <Button
                           variant={"outline"}
-                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#323232] hover:text-[#323232]`}
+                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#323232] hover:bg-[#638D39] hover:text-[#323232]`}
                         >
                           <CalendarIcon className="mr-2 h-4 w-4 text-[#323232]" />
                           {field.value ? (

@@ -20,7 +20,7 @@ const imageVariants = {
 const Follow: React.FC = () => {
   return (
     <section
-      className="relative h-full w-full bg-[#fff] pb-4 pt-12"
+      className="relative h-full w-full bg-[#f7f4ed] pb-4 pt-12"
       style={{
         backgroundImage: "url('/images/aboutbg.png')",
         backgroundSize: "contain",

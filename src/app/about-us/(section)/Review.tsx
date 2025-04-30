@@ -28,7 +28,7 @@ const Reviews = () => {
 
   return (
     <section
-      className="relative flex h-full w-full justify-center bg-[#fff] pb-10"
+      className="relative flex h-full w-full justify-center bg-[#f7f4ed] pb-10"
       style={{
         backgroundImage: "url('/images/aboutbg.png')",
         backgroundSize: "contain",

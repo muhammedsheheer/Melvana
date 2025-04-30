@@ -225,7 +225,14 @@ export default function MenuMobile() {
   }, [organizedMenu]);
 
   return (
-    <section className="flex w-full max-w-[1300px] flex-row bg-mobilebg">
+    <section
+      className="flex w-full max-w-[1300px] flex-row bg-mobilebg"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
+    >
       <div className="flex w-full flex-col gap-0 md:w-4/6">
         <div className="flex h-fit w-full flex-col gap-2 bg-mobilebg pb-2 pt-5 md:hidden">
           <div className="flex w-full items-center justify-between px-5 py-2">

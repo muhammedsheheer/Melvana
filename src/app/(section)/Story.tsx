@@ -42,7 +42,7 @@ const Story: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-full w-full bg-[#fff] px-4 py-12 md:px-14 md:py-24"
+      className="relative h-full w-full bg-[#f7f4ed] px-4 py-12 md:px-14 md:py-24"
       style={{
         backgroundImage: "url('/images/aboutbg.png')",
         backgroundSize: "contain",

@@ -4,7 +4,12 @@ const Hero = ({}) => {
   return (
     <section
       id="hero"
-      className="flex w-full items-center justify-center bg-[#fff] py-6 lg:py-12"
+      className="flex w-full items-center justify-center bg-[#f7f4ed] py-6 lg:py-12"
+      style={{
+        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+      }}
     >
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">

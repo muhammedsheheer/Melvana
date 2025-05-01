@@ -184,7 +184,7 @@ const Tips = ({}) => {
               />
             </p>
             <p className="reserve-two w-full text-center text-[#9c9999] md:-ml-[50px] md:max-w-[400px]">
-              Reserve your table at VU Lounge for an unforgettable dining
+              Reserve your table at Mevlana for an unforgettable dining
               experience. Ensure your spot to enjoy our exquisite dishes and
               vibrant ambiance. Book now and let us make your visit special!
             </p>

@@ -161,7 +161,7 @@ const Reserve = ({ }) => {
                                 }}
                             />
                         </p>
-                        <p className="reserve-two text-[#9c9999] w-full md:max-w-[400px] text-center md:-ml-[50px]">Reserve your table at VU Lounge for an unforgettable dining experience. Ensure your spot to enjoy our exquisite dishes and vibrant ambiance. Book now and let us make your visit special!</p>
+                        <p className="reserve-two text-[#9c9999] w-full md:max-w-[400px] text-center md:-ml-[50px]">Reserve your table at Mevlana for an unforgettable dining experience. Ensure your spot to enjoy our exquisite dishes and vibrant ambiance. Book now and let us make your visit special!</p>
                         <Link href='/table-booking'>
                             <Button className="hero-button flex items-center justify-center gap-3 px-10 py-7" variant='image'> Book Table</Button>
                         </Link>

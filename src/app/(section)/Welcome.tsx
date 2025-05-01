@@ -151,7 +151,7 @@ const Welcome = ({ }) => {
           <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
             <div className="flex flex-col items-center gap-5">
               <p className="welcome-two w-full text-center text-[#AAA9A9] md:-ml-[50px] md:w-[530px]">
-                VU Lounge in Bushey offers a perfect blend of exceptional
+                Mevlana offers a perfect blend of exceptional
                 cuisine and a lively atmosphere. Experience refined dining in a
                 vibrant and welcoming setting.
               </p>

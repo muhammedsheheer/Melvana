@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 import Map from "./(section)/Map";
 import Drinks from "./(section)/Drinks";
 

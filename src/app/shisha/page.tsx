@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Shisha from "../shisha/(section)/Shisha";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 import Map from "./(section)/Map";
 
 

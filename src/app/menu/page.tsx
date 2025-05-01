@@ -1,6 +1,6 @@
 import Menu from "@/app/menu/Menu";
 import MenuMobile from "./MenuMobile";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
 
 export default function MenuPage() {
     return (

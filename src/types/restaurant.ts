@@ -46,7 +46,6 @@ export interface Restaurant {
         friday: DaySchedule;
         saturday: DaySchedule;
     };
-    charges: charge[];
     options: {
         _id: string;
         hasDineIn: boolean;
@@ -149,13 +148,4 @@ interface Window {
     startTime: string;
     endTime: string;
     _id: string;
-}
-
-interface charge {
-    isPercentage: boolean;
-    isActive: boolean;
-    _id: string;
-    name: string;
-    value: number;
-    orderType: string;
 }

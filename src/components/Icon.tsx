@@ -201,7 +201,7 @@ export const Icons = {
       </g>
     </svg>
   ),
-  unknown: (props: IconProps) => (
+  tripAdvisor: (props: IconProps) => (
     <svg
       width="33"
       height="27"

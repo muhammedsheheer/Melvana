@@ -24,7 +24,7 @@
 @media (min-width: 1024px) {
   /* lg */
   .embla-menu {
-    --slide-size: 33%;
+    --slide-size: 37%;
   }
 }
 
@@ -33,13 +33,15 @@
 }
 .embla-menu__container {
   display: flex;
+  width: 100%;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
 }
 .embla-menu__slide {
   transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size);
+  flex: 0 0 var(--slide-size); /* Shows 3 slides at a time */
   min-width: 0;
+  position: relative;
   padding-left: var(--slide-spacing);
 }
 .embla-menu__slide__number {

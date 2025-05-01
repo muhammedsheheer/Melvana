@@ -1,166 +1,159 @@
 "use client";
+import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Sidebar from "./SideBar";
+import { BetaMenuActive } from "@/lib/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import clsx from "clsx";
+import { Clock, Mail, MapPin, Phone, Plus } from "lucide-react";
+import Sidebar from "./SideBar";
 
 const Navbar = ({
-  position = "static",
+    position = "static",
 }: {
-  position?: "static" | "fixed" | "absolute";
+    position?: "static" | "fixed" | "absolute";
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    const d = localStorage.getItem("positiond");
-    if (d !== null) {
-      setPositiond(d);
-    }
-  }, []);
-  const [positiond, setPositiond] = useState<string>("");
-  useEffect(() => {
-    if (positiond) {
-      localStorage.setItem("positiond", positiond);
-    }
-  }, [positiond]);
-  const pathname = usePathname();
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    const pathname = usePathname();
 
-  return (
-    <nav
-      className={cn(
-        `${position} top-0 z-50 h-[10vh] w-full pt-4 md:pt-10`,
-        pathname === "/" ? "bg-transparent" : "pt-4 md:pt-5",
-      )}
-    >
-      {/*big screen */}
-      <div className="hidden px-4 md:block md:px-12">
-        <div className="flex flex-row items-center justify-between">
-          <div>
-            <Link href={"/"}>
-              <Image
-                src={"/images/home/hero/logo.png"}
-                width={281}
-                height={74}
-                alt="logo"
-                className="w-32"
-              />
-            </Link>
-          </div>
-          <div className="flex flex-row items-center justify-center gap-20">
-            <Link
-              href={"/"}
-              className={
-                pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-              }
-            >
-              Home
-            </Link>
-            <Link
-              href={"/menu"}
-              className={
-                pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-              }
-            >
-              Menu
-            </Link>
-            {/* <Link
-              href={""}
-              className={
-                pathname === "/"
-                  ? "text-center font-playfair text-xs md:text-sm font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs md:text-sm font-[600] uppercase tracking-[0.96px] text-[#fff]"
-              }
-            >
-              FOOD & DRINK
-            </Link> */}
-            <Link
-              href={"/about-us"}
-              className={
-                pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-              }
-            >
-              Our Story
-            </Link>
+    const [isScrolled, setIsScrolled] = useState(false);
 
-            <Link
-              href={"/contact"}
-              className={
-                pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
-              }
-            >
-              Contact
-            </Link>
-          </div>
-          <div>
-            <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:px-7 md:py-7 md:text-sm">
-              <Link href={"/table-booking"}>Book Now</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
+    useEffect(() => {
+        const handleScroll = () => {
+            const heroHeight = document.getElementById("hero")?.offsetHeight ?? 0;
+            setIsScrolled(window.scrollY > heroHeight);
+        };
 
-      {/*mobile screen */}
-      <div className="block px-4 md:hidden md:px-20">
-        <div className="flex flex-row items-center justify-between">
-          <div>
-            <Link href={"/"}>
-              <Image
-                src={"/images/home/hero/logo.png"}
-                width={281}
-                height={74}
-                alt="logo"
-                className="w-20"
-              />
-            </Link>
-          </div>
-          <div>
-            <Sidebar>
-              <Button
-                variant="ghost"
-                className="flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
-              >
-                <div className="flex flex-row gap-2">
-                  <EqualizerIcon />
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    return (
+        <nav
+            className={cn(
+                `${position} top-0 z-50 flex h-[110px] w-full flex-col bg-transparent px-4 transition-all duration-0 ease-in-out justify-between items-center border-b-[0.25px] border-b-primary`,
+                isScrolled && "bg-[#070d0f] border-b-0",
+                pathname !== "/" && "bg-[#070d0f] border-b-0",
+            )}
+        >
+            <div
+                className={cn(
+                    "flex h-full relative w-full items-center justify-between gap-2",
+                )}
+            >
+                <Link href="/">
+                    <Image src="/images/logo.png" width={208} height={104} alt="logo" className="w-24 absolute top-4 -left-3" />
+                </Link>
+
+                <div className={cn(
+                    "hidden md:flex flex-row items-center min-w-[1300px] h-full justify-between gap-9",
+                )} >
+                    <div className="flex justify-center items-center gap-5 pl-20">
+
+                    <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase"
+                        >
+                        <Link href="/" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Home</span> <Plus className="text-primary h-4 w-4" /></Link>
+                    </Button>
+                    {/* <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/menu" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Menu</span> <Plus className="text-primary h-4 w-4" /></Link>
+                        </Button> */}
+                    {/* <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/drinks" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Drinks & Desserts</span> <Plus className="text-primary h-4 w-4" /></Link>
+                        </Button> */}
+                    {/* <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/our-food" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Our Menu</span> <Plus className="text-primary h-4 w-4" /></Link>
+                        </Button>
+                        <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/shisha" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span> Shisha</span> <Plus className="text-primary h-4 w-4" /></Link>
+                        </Button>
+                        <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/whats" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span> What`s on</span> <Plus className="text-primary h-4 w-4" /></Link>
+                        </Button> */}
+                    <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                        >
+                        <Link href="/table-booking" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Reservation</span> <Plus className="text-primary h-4 w-4" /></Link>
+                    </Button>
+                    <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                    >
+                        <Link href="/about-us" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Our Story</span> <Plus className="text-primary h-4 w-4" /></Link>
+                    </Button>
+                    <Button
+                        asChild
+                        variant="link"
+                        className="px-0 uppercase text-accent"
+                    >
+                        <Link href="/contact" className="flex items-center justify-center gap-2 text-white hover:text-primary"><span>Contact Us</span> <Plus className="text-primary h-4 w-4" /></Link>
+                    </Button>
+                        </div>
+
+                    <Link href="/menu">
+                        <Button
+                            className="hero-button flex items-center justify-center gap-3 px-8 py-7 ml-8"
+                            variant="image"
+                        >
+                            Order Online
+                        </Button>
+                    </Link>
                 </div>
-              </Button>
-            </Sidebar>{" "}
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
+
+                <Sidebar>
+                    <Button
+                        variant="ghost"
+                        className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
+                    >
+                        <span className="sr-only">Menu</span>
+                        <EqualizerIcon />
+                    </Button>
+                </Sidebar>
+            </div>
+
+
+
+
+        </nav>
+    );
 };
 
 export default Navbar;
 
 const EqualizerIcon: React.FC = () => {
-  const pathname = usePathname();
-
-  return (
-    <div className="equalizer-icon rotate">
-      <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
-      ></div>
-      <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
-      ></div>
-      <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
-      ></div>
-    </div>
-  );
+    return (
+        <div className="equalizer-icon rotate">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+        </div>
+    );
 };

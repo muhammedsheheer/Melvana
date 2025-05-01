@@ -6,14 +6,13 @@ import { useCart } from "@/context/CartContext";
 import { useRestaurant } from "@/context/RestaurantContext";
 import { formattedItemPrice } from "@/lib/formatted-item-price";
 import { getCurrencySymbol } from "@/lib/get-currency-symbol";
-import { GetModifiersFromItemId } from "@/lib/get-modifiers-from-item-id";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, CircleMinus, CirclePlus, Trash2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const Cart = ({ }) => {
+const Cart = ({}) => {
     const { cartItems, updateItem, removeItem } = useCart();
     const { restaurant } = useRestaurant();
     const [totalAmount, setTotalAmount] = useState(0);
@@ -59,33 +58,7 @@ const Cart = ({ }) => {
                                                     </div>
                                                     {menuitem && menuitem.price.value > 0 ? (
                                                         <p className="font-[700] text-menuprimary">
-                                                            {menuitem && menuitem.takeawayPrice.value > 0 ? (
-                                                                <>
-                                                                    {getCurrencySymbol(menuitem.takeawayPrice.currency)} {formattedItemPrice(menuitem.takeawayPrice.value)}
-                                                                </>
-                                                            ) : (
-                                                                <>
-                                                                    {menuitem && menuitem.price.value > 0 ? (
-                                                                        <>
-                                                                            {getCurrencySymbol(menuitem.price.currency)} {formattedItemPrice(menuitem.price.value)}
-                                                                        </>
-                                                                    ) : (
-                                                                        <>
-                                                                            {menuitem && menuitem.modifiers.length === 0 ? (
-                                                                                <>Free</>
-                                                                            ) : (
-                                                                                menuitem?.modifiers.map((mod, index) =>
-                                                                                    GetModifiersFromItemId(menuitem, items, index).map((modifier) => {
-                                                                                        if (modifier._id === item.modifiers.find((modifier) => modifier.defaultSelection)?.defaultSelection) {
-                                                                                            return `${getCurrencySymbol(modifier.price.currency)} ${formattedItemPrice(modifier.price.value)}`;
-                                                                                        }
-                                                                                    })
-                                                                                )
-                                                                            )}
-                                                                        </>
-                                                                    )}
-                                                                </>
-                                                            )}
+                                                            {menuitem && getCurrencySymbol(menuitem.price.currency)} {menuitem && formattedItemPrice(menuitem.price.value)}
                                                         </p>
                                                     ) : (
                                                         ""
@@ -121,11 +94,7 @@ const Cart = ({ }) => {
                                                         </div>
                                                     ))}
                                                 </div>
-                                                <p className="text-sm font-[400] tracking-[1.8px] text-menusecondary">
-                                                    {item.notes && <span className="border-b-[1px] border-b-menusecondary">Instructions</span>}
-                                                    <br />
-                                                    {item?.notes}
-                                                </p>
+                                                <p className="text-sm font-[400] tracking-[1.8px] text-menusecondary">{item?.notes}</p>
                                                 <div className={cn("flex w-full items-center justify-between pt-0", item.modifiers.length > 0 && "pt-3")}>
                                                     <EditMenuItemDrawer item={item} index={index}>
                                                         <p className="font-[400] capitalize text-menuprimary underline">Edit Item</p>
@@ -207,7 +176,7 @@ const Cart = ({ }) => {
                         disabled={cartItems.length === 0 || !restaurant?.onlineOrder || (!restaurant?.isDeliveryEnabled && !restaurant.isTakeAwayEnabled)}
                         className="flex w-full items-center justify-center rounded-none bg-menuprimary py-8 text-lg font-[700] uppercase tracking-[1px] text-menuforeground hover:bg-buttonhover disabled:bg-buttondisabled"
                     >
-                        checkout{' '}{"£"} {formattedItemPrice(totalAmount)}
+                        checkout.{"£"} {formattedItemPrice(totalAmount)}
                     </Button>
                 </Link>
             </div>

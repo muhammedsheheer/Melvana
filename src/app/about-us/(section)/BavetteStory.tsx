@@ -1,67 +1,33 @@
 import Image from "next/image";
 
-const BavetteStory = ({}) => {
+const BavetteStory = ({ }) => {
   return (
-    <section
-      className="relative flex h-full w-full items-center justify-center bg-[#194129] p-4 lg:py-16"
-      style={{
-        backgroundImage: "url('/images/frame.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "repeat",
-      }}
-    >
-      <div
-        className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#194129]"
-        style={{
-          backgroundImage: "url('/images/frame.png')",
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
-        }}
-      >
-        <h2 className="text-center font-marcellus text-4xl text-[#fff] md:left-[15%] md:text-8xl">
-          The Mevlana
-          <br />
+    <section className="relative flex h-full w-full items-center justify-center lg:py-16 p-4">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#050505]">
+        <h2 className="font-playfair text-8xl text-[#262626] md:left-[15%] md:text-8xl text-center">
+          The Vu<br />
           Story
         </h2>
-        <div
-          className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#194129] md:flex-row lg:px-24 lg:py-20"
-          style={{
-            backgroundImage: "url('/images/frame.png')",
-            backgroundSize: "contain",
-            backgroundRepeat: "repeat",
-          }}
-        >
+        <div className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#050505] md:flex-row lg:px-24 lg:py-20">
           <div className="h-full w-full overflow-hidden p-4 md:w-1/2 md:p-0">
             <Image
-              src="/images/about-us/image9.jpg"
-              width={577}
-              height={676}
+              src="/images/about-us/DSC03517.png"
+              width={6024}
+              height={4024}
               alt="private dining"
-              className="h-auto w-full rounded-lg md:rounded-none"
+              className="md:h-[600px] w-full rounded-lg md:rounded-none object-cover rotate-180"
             />
           </div>
           <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
-            <h1 className="max-w-[500px] text-center font-marcellus text-4xl text-[#fff] md:text-start md:text-7xl">
-              From Passion
-              <br />
-              to Perfection{" "}
+            <h1 className="max-w-[500px] text-center font-playfair text-6xl sm:text-7xl md:text-start">
+              From Dream<br />
+              to Sizzle
             </h1>
-            <p className="max-w-[450px] text-center font-playfair font-light leading-[160%] text-[#fff] md:text-start">
-              What began as a vision—a quest for deeper connection through
-              food—has blossomed into Mevlana, a place where flavors and souls
-              intertwine. Inspired by the wisdom of Rumi, our journey is not
-              merely about preparing meals, but about creating an experience
-              that nourishes both the heart and the spirit.
+            <p className="max-w-full text-center font-light leading-[160%] text-[#C1B6A6] md:text-start">
+              Vu Lounge is a culinary haven born from a passion for creating unforgettable dining experiences. What began as a small six-cover eatery has blossomed into a lively destination, cherished by our guests for its warm ambiance and exceptional cuisine. Our journey reflects dedication, growth, and a commitment to bringing people together through the love of food.
               <br />
-              From humble beginnings to a sanctuary for those who seek meaning
-              in every taste, our commitment to craftsmanship, warmth, and
-              sincerity remains unwavering. Every ingredient is chosen with
-              care, every dish is prepared with love, and each bite carries the
-              poetry of tradition and togetherness.
               <br />
-              At Mevlana, we don’t just serve food—we offer moments of
-              reflection, a taste of harmony, and a celebration of life’s
-              boundless beauty.
+              Nestled in a prime location, Vu Lounge has become a symbol of vibrant hospitality and innovative flavors. Over the years, we’ve expanded threefold, turning our humble beginnings into a thriving hub of community and celebration. Each dish is crafted to perfection, embodying the spirit of excellence that defines Vu Lounge.
             </p>
           </div>
         </div>

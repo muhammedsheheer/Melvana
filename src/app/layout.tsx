@@ -1,80 +1,40 @@
 import "@/styles/globals.css";
-import "@/styles/lines.css";
 import "@/styles/ham.css";
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
-import {
-  Open_Sans,
-  Inter,
-  Oooh_Baby,
-  Sofia_Sans_Condensed,
-  Manrope,
-  Poppins,
-  Cormorant,
-  Playfair_Display,
-  Marcellus_SC,
-} from "next/font/google";
+import { Inter, Birthstone, Open_Sans, Poppins } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Mevlana",
-  description: "Mevlana",
-  icons: [{ rel: "icon", url: "/images/home/hero/logo.png", sizes: "11x11" }],
+  title: "Vu Lounge | Premier Turkish Dining & Shisha Experience in Bushey",
+  description: "Experience the perfect fusion of fine Turkish cuisine, premium steaks, and an exclusive shisha lounge at Vu Lounge, Bushey. Indulge in a refined ambiance with exceptional hospitality.",
+  icons: [{ rel: "icon", url: "/images/home/logo.png" }],
+  keywords: "Vu Lounge, Turkish restaurant Bushey, shisha lounge, steakhouse, fine dining, premium shisha, Mediterranean cuisine"
 };
 
-// const open_sans = Open_Sans({
-//   subsets: ["latin"],
-//   variable: "--font-open_sans",
-//   weight: ["400", "500", "600", "700", "800"],
-// });
-
-// const oooh_Baby = Oooh_Baby({
-//   subsets: ["latin"],
-//   variable: "--font-oooh_Baby",
-//   weight: ["400"],
-// });
-
-const sofia_sans = Sofia_Sans_Condensed({
+const stone = Birthstone({
   subsets: ["latin"],
-  variable: "--font-sofia_sans",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-stone",
+  weight: ["400"],
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const marcellus = Marcellus_SC({
-  subsets: ["latin"],
-  variable: "--font-marcellus",
-  weight: ["400"],
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const cormorant = Cormorant({
-  subsets: ["latin"],
-  variable: "--font-cormorant",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300"],
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
+const opens = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open",
+  weight: ["400"],
+})
 
 export default function RootLayout({
   children,
@@ -83,20 +43,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "theme-custom flex min-h-screen font-inter antialiased",
-          // open_sans.variable,
-          // oooh_Baby.variable,
-          sofia_sans.variable,
-          manrope.variable,
-          poppins.variable,
-          marcellus.variable,
-          playfair.variable,
-          cormorant.variable,
+          "theme-custom font-inter flex min-h-screen text-[#FBEAD2] antialiased",
+          stone.variable,
           inter.variable,
+          opens.variable,
+          poppins.variable
         )}
       >
         <Providers>{children}</Providers>
       </body>
-    </html>
+    </html >
   );
 }

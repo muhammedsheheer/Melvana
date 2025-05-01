@@ -1,31 +1,14 @@
 import Contact from "@/app/contact/(section)/Contact";
-// import FAQ from "@/components/Faq";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NavBar";
 
-const page = ({}) => {
+
+const page = ({ }) => {
   return (
     <main className="relative flex h-full w-full">
-      <div
-        className="flex h-full w-full flex-col items-center justify-center bg-[#194129]"
-        style={{
-          backgroundImage: "url('/images/aboutbg.png')",
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
-        }}
-      >
-        <Navbar position="absolute" />
-        {/* <div
-          className="h-[15vh] w-full bg-[#fff]"
-          id="hero"
-          style={{
-            backgroundImage: "url('/images/aboutbg.png')",
-            backgroundSize: "contain",
-            backgroundRepeat: "repeat",
-          }}
-        ></div> */}
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <Navbar />
         <Contact />
-        {/* <FAQ /> */}
         <Footer />
       </div>
     </main>

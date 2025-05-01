@@ -1,39 +1,65 @@
-"use client";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+'use client'
 import Hero from "./(section)/Hero";
-import Special from "./(section)/(special)/Special";
+import Welcome from "./(section)/Welcome";
+import Footer from "@/components/Footer";
 import Reviews from "./(section)/Review";
-import Story from "./(section)/Story";
+import ConnectWithUs from "./(section)/ConnectWithUs";
+import Contact from "./(section)/Contact";
+import Latest from "./(section)/Latest";
 import Reserve from "./(section)/Reserve";
-import Follow from "./(section)/Follow";
-import Highlights from "./(section)/Highlights";
+import Imagecontainer from "./(section)/Image";
+import Ambiance from "./(section)/Ambiance";
+import Tips from "./(section)/Tips";
+import { VideoCarousel } from "./(section)/Videos";
+import Menu from "./(section)/Menu";
+import Special from "./(section)/Special";
+import ViewMenu from "@/components/floating-buttons/ViewMenu";
+import { useState, useEffect } from "react";
+import Navbar from "@/components/Navbar";
 
 export default function HomePage() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = document.getElementById("hero")?.offsetHeight ?? 0;
+      setIsScrolled(window.scrollY > heroHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <main className="relative flex h-full w-full overflow-hidden">
-      <div className="flex h-full w-full flex-col items-center justify-center">
-        <Navbar position="absolute" />
+    <main className="relative flex h-full w-full">
+      <div className="flex h-full w-full flex-col items-center justify-center overflow-x-hidden">
+        <Navbar position="fixed" />
         <Hero />
+        {/* <Latest /> */}
+        <Welcome />
+        <Ambiance />
         <Special />
-        <Story />
-        <Highlights />
+        {/* <VideoCarousel /> */}
         <Reserve />
+        <Tips />
         <Reviews />
-        <Follow />
+        <Imagecontainer />
+        {/* <Menu /> */}
+        {/* <Menu /> */}
+        {/* <Reservation /> */}
+        {/* <Flavour /> */}
+        {/* <Testimonials /> */}
+        {/* <Map /> */}
+        <ConnectWithUs />
+        <Contact />
         <Footer />
       </div>
-      {/* <div className="fixed bottom-6 right-10 z-50 hidden md:block">
-        <Link href={"/table-booking"}>
-          <Image
-            src={"/images/home/hero/round.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="w-32"
-          />
-        </Link>
-      </div> */}
-    </main>
+      {isScrolled &&
+        <div className="fixed bottom-6 right-2 md:bottom-[54px] md:right-[48px] z-50 flex">
+          <ViewMenu />
+        </div>
+      }
+    </main >
   );
 }

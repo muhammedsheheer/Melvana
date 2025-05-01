@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
@@ -8,15 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        stone: ["var(--font-stone)", ...fontFamily.sans],
         inter: ["var(--font-inter)", ...fontFamily.sans],
-        // open_sans: ["var(--font-open_sans)", ...fontFamily.sans],
-        // oooh_Baby: ["var(--font-oooh_Baby)", ...fontFamily.sans],
-        sofia_sans: ["var(--font-sofia_sans)", ...fontFamily.sans],
-        manrope: ["var(--font-manrope)", ...fontFamily.sans],
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
-        marcellus: ["var(--font-marcellus)", ...fontFamily.sans],
-        playfair: ["var(--font-playfair)", ...fontFamily.sans],
-        cormorant: ["var(--font-cormorant)", ...fontFamily.sans],
+        sans: ["Inter", "sans-serif"],
+        opens: ["var(--font-opens)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -24,9 +19,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        "button-bg": "url('/images/buttonbg.png')",
-        "button-hover": "url('/images/buttonhover.png')",
-        "button-bg-inverted": "url('/images/buttonInvertedBg.png')",
+        'button-bg': "url('/images/buttonbg.png')",
+        'button-hover': "url('/images/buttonhover.png')",
+        'button-bg-inverted': "url('/images/buttonInvertedBg.png')"
       },
       colors: {
         background: "hsl(var(--background))",
@@ -93,5 +88,6 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

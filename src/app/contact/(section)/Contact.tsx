@@ -1,12 +1,10 @@
 "use client";
-import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -14,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { Mail, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -22,25 +20,25 @@ import toast from "react-hot-toast";
 import { z } from "zod";
 
 const FormValidation = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  first: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Invalid email address." }),
   phone: z
     .string()
     .min(10, { message: "Phone number must be at least 10 digits." }),
-  reason: z.string(),
+  last: z.string().min(2, { message: "Name must be at least 2 characters." }),
   message: z.string(),
 });
 
 type FormData = z.infer<typeof FormValidation>;
 
-const Contact = ({}) => {
+const Contact = ({ }) => {
   const form = useForm<FormData>({
     resolver: zodResolver(FormValidation),
     defaultValues: {
-      name: "",
+      first: "",
       phone: "",
       email: "",
-      reason: "",
+      last: "",
       message: "",
     },
   });
@@ -54,10 +52,26 @@ const Contact = ({}) => {
       return await axios.post("/api/contact", values);
     },
     onSuccess: () => {
-      toast.success(
-        "Your message has been submitted successfully. We will get back to you soon",
+      toast(
+        (t) => (
+          <div className="flex flex-col items-center justify-center gap-2">
+            <p className="text-center">
+              Your reservation request has been successfully submitted to the
+              restaurant!
+            </p>
+            <button
+              onClick={() => {
+                toast.dismiss(t.id);
+                form.reset();
+              }}
+              className="rounded bg-primary px-4 py-2 text-white"
+            >
+              OK
+            </button>
+          </div>
+        ),
+        { duration: Infinity },
       );
-      form.reset();
     },
     onError: () => {
       toast.error(
@@ -65,136 +79,100 @@ const Contact = ({}) => {
       );
     },
   });
-
   return (
-    <section
-      className="flex h-full w-full flex-col items-center justify-center bg-[#194129] pt-20 md:pt-60"
-      id="contact"
-      style={{
-        backgroundImage: "url('/images/frame.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "repeat",
-      }}
-    >
-      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
-        <div className="flex w-full flex-col lg:flex-row">
-          <div
-            className="flex w-full flex-col gap-8 bg-[#194129] px-6 lg:w-1/2 lg:px-28"
-            style={{
-              backgroundImage: "url('/images/frame.png')",
-              backgroundSize: "contain",
-              backgroundRepeat: "repeat",
-            }}
-          >
-            <div className="flex flex-col gap-8">
-              {/* <p className="font-bai text-lg leading-[4px] text-[#194129]">
-                Contact Us
-              </p> */}
-              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#fff] md:leading-[50px] lg:text-5xl">
-                Get in
-                <br /> Touch
-              </h1>
+    <section className="flex h-full w-full items-center justify-center bg-[#070d0f]">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] px-0 pl-0 pt-8 md:px-2">
+        <div className="flex w-full flex-col gap-6 lg:flex-row">
+          <div className="relative flex w-full flex-col items-center justify-center gap-7 px-4 md:px-0 lg:w-1/2">
+            <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/20"></div>
+            <div className="absolute right-0 top-0 flex h-full w-full justify-center overflow-hidden">
+              {/* <Image
+                        src='/images/home/hero.png'
+                        alt="hero"
+                        width={1093}
+                        height={967}
+                        className="min-h-full scale-x-[-1] object-cover"
+                    /> */}
+
+              <video
+                className="min-h-full min-w-full object-cover"
+                style={{ objectPosition: "center" }}
+                src="/videos/contact/contact.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              // poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/vu-lounge-frame.png"
+              ></video>
             </div>
-            <div className="flex flex-col gap-8">
-              <div className="flex gap-6">
+            <p className="font-inter text-4xl font-[200] uppercase text-primary md:text-7xl z-20">
+              Contact
+              <br />
+              with us
+            </p>
+            <div className="flex w-full flex-col items-start justify-center gap-4 bg-[#091113] px-9 py-6 md:w-[350px] z-20">
+              <p className="font-inter font-[200] uppercase text-primary">
+                Our Email
+              </p>
+              <div className="flex items-center gap-2">
                 <div>
-                  <div className="h-fit w-fit rounded-full p-2">
-                    <MapPin className="text-[#fff]" />
+                  <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
+                    <Mail className="text-primary" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="font-playfair text-[#fff]">
-                      Horsfield St, Bolton BL3 4LU,
-                      <br /> United Kingdom
+                  <Link href="mailto:info@vulounge.co.uk">
+                    <p className="border-b-[1px] border-b-primary text-xl text-primary">
+                      info@vulounge.co.uk
                     </p>
                   </Link>
-                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="flex items-center gap-2 text-sm text-[#fff]">
-                      <span className="font-playfair">Get Direction</span>
-                      <ArrowRight className="text-[#fff]" />
-                    </p>
-                  </Link>
                 </div>
-              </div>
-              {/* <div className="flex items-center gap-6">
-                <div>
-                  <div className="h-fit w-fit rounded-full p-2">
-                    <Phone />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <Link href="tel:+441234567890" className="">+44 1234 567890</Link>
-                </div>
-              </div> */}
-              <div className="flex items-center gap-6">
-                <div>
-                  <div className="h-fit w-fit rounded-full p-2">
-                    <Phone className="text-[#fff]" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <Link
-                    href="tel:+441204860038"
-                    className="font-playfair text-[#fff]"
-                  >
-                    +44 1204 860038{" "}
-                  </Link>
-                </div>
-              </div>
-              <div className="flex items-center justify-start gap-4">
-                <Link
-                  href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
-                  target="_blank"
-                >
-                  <Icons.instagram className="text-[#fff]" />
-                </Link>
-                <Link
-                  href={
-                    "https://www.tripadvisor.in/ShowUserReviews-g187053-d30464254-r985280947-Mevlana_Bolton-Bolton_Greater_Manchester_England.html"
-                  }
-                  target="_blank"
-                >
-                  <Icons.unknown className="text-[#fff]" />
-                </Link>
-                <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                  <Icons.google className="text-[#fff]" />
-                </Link>
-                {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
-                  <Icons.facebook />
-                </Link> */}
               </div>
             </div>
           </div>
-          <div
-            className="flex w-full flex-col bg-[#194129] lg:w-1/2 lg:items-center lg:justify-center"
-            style={{
-              backgroundImage: "url('/images/frame.png')",
-              backgroundSize: "contain",
-              backgroundRepeat: "repeat",
-            }}
-          >
+          <div className="flex w-full flex-col bg-[#070d0f] pb-24 lg:w-1/2 lg:items-center lg:justify-start">
+            <p className="w-4/5 px-4 text-start font-inter text-xl font-[200] uppercase text-primary md:px-0">
+              Make a enquiry now
+            </p>
             <div className="w-full px-3 lg:w-4/5 lg:px-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="h-full">
                   <div className="flex gap-4 pt-7">
                     <div className="flex w-full flex-col gap-6">
-                      <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                          <FormItem className="w-full">
-                            <FormControl>
-                              <Input
-                                placeholder="First Name"
-                                {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
+                      <div className="flex w-full gap-4">
+                        <FormField
+                          control={form.control}
+                          name="first"
+                          render={({ field }) => (
+                            <FormItem className="w-full">
+                              <FormControl>
+                                <Input
+                                  placeholder="First Name"
+                                  {...field}
+                                  className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0b1316] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="last"
+                          render={({ field }) => (
+                            <FormItem className="w-full">
+                              <FormControl>
+                                <Input
+                                  placeholder="Last Name"
+                                  {...field}
+                                  className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0b1316] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
                       <FormField
                         control={form.control}
                         name="phone"
@@ -204,7 +182,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Phone"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0b1316] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                               />
                             </FormControl>
                             <FormMessage />
@@ -220,7 +198,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Email"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0b1316] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                               />
                             </FormControl>
                             <FormMessage />
@@ -232,14 +210,11 @@ const Contact = ({}) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel className="font-playfair text-[#fff]">
-                              Reason for contacting (optional)
-                            </FormLabel>
                             <FormControl>
                               <Textarea
                                 placeholder="Your Message"
                                 {...field}
-                                className="h-32 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-24 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0b1316] outline-none placeholder:text-[#787571] focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                               />
                             </FormControl>
                             <FormMessage />
@@ -248,12 +223,16 @@ const Contact = ({}) => {
                       />
                     </div>
                   </div>
-                  <div className="flex w-full flex-col pt-7 lg:flex-row">
+                  <div className="flex w-full pt-7">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#A98151] py-6 text-white hover:bg-[#e9b87c] hover:text-[#fff]"
+                      className="w-full px-10 py-6"
                       disabled={bookTableMutation.isPending}
+                      style={{
+                        background:
+                          "linear-gradient(97deg, #9D6E2C -13.33%, #A88142 1.07%, #CBB16A 9.43%, #F6ED9B 23.15%)",
+                      }}
                     >
-                      Contact US
+                      Enquiry now
                     </Button>
                   </div>
                 </form>
@@ -261,23 +240,36 @@ const Contact = ({}) => {
             </div>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.2043845604217!2d-2.467085523398032!3d53.5677202723543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba75750cbd5b9%3A0xfcde2517b593e215!2sMevlana%2C%20Bolton!5e1!3m2!1sen!2sin!4v1742995261619!5m2!1sen!2sin"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="h-[500px] w-full"
-        ></iframe>
-      </div>
-      <div className="flex w-full overflow-hidden">
-        <Image
-          className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image3.jpg"
-          alt="bottom"
-          width={966}
-          height={96}
-        />
+        <div className="flex w-full flex-col">
+          <div className="flex w-full items-center justify-center bg-[#0a1315] px-4 py-6">
+            <div className="border-r-[1px] border-r-primary pr-2 md:pr-6">
+              <Link href={"https://www.tripadvisor.in/Restaurant_Review-g1791615-d19258647-Reviews-Vu_Lounge-Bushey_Hertfordshire_England.html"} target="_blank">
+              <Image
+                src="/images/tripadvisor.png"
+                width={272}
+                height={57}
+                alt="tripadvisor"
+              />
+              </Link>
+            </div>
+            <div className="pl-2 md:pl-6">
+              <Image
+                src="/images/design-my-night.png"
+                width={220}
+                height={56}
+                alt="tripadvisor"
+              />
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.8982009132355!2d-0.3649722239962183!3d51.643389371844535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876156c4ad8af4b%3A0xc70fe1d6707238c0!2sVu%20Lounge!5e0!3m2!1sen!2sin!4v1733298204427!5m2!1sen!2sin"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="h-[300px] w-full grayscale invert"
+          ></iframe>
+        </div>
       </div>
     </section>
   );

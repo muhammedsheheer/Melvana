@@ -1,26 +1,24 @@
 import BavetteStory from "@/app/about-us/(section)/BavetteStory";
 import Hero from "@/app/about-us/(section)/Hero";
 import JoinUs from "@/app/about-us/(section)/JoinUs";
-import Review from "@/app/about-us/(section)/Review";
+import OurManagement from "@/app/about-us/(section)/OurManagement";
+import OurTeam from "@/app/about-us/(section)/OurTeam";
+import Reviews from "@/app/about-us/(section)/Reviews";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NavBar";
 
-const page = ({}) => {
+
+const page = ({ }) => {
   return (
     <main className="relative flex h-full w-full">
-      <div
-        className="flex h-full w-full flex-col items-center justify-center bg-[#194129]"
-        style={{
-          backgroundImage: "url('/images/frame.png')",
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
-        }}
-      >
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#050505]">
         <Navbar position="absolute" />
         <Hero />
         <BavetteStory />
+        {/* <OurTeam />
+        <OurManagement /> */}
         <JoinUs />
-        <Review />
+        <Reviews />
         <Footer />
       </div>
     </main>

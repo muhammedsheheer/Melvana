@@ -1,12 +1,12 @@
 "use client";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NavBar";
 import Checkout from "./(section)/Checkout";
 import Image from "next/image";
 import Link from "next/link";
 import { MoveLeft } from "lucide-react";
 import { useRestaurant } from "@/context/RestaurantContext";
 
-const Page = ({}) => {
+const Page = ({ }) => {
     const { restaurant } = useRestaurant();
 
     if (!restaurant?.onlineOrder) {

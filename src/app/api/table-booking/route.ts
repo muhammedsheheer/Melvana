@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { format } from "date-fns";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -35,23 +34,16 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: `${process.env.EMAIL_FROM_PREFIX} Reservations <${process.env.EMAIL_USER}>`,
       to: process.env.RECIPIENT_EMAIL,
-      subject: `New Table Booking By ${name} for ${format(new Date(date), "dd-MM-yyyy")}`,
-      html: `
-      <h1>Table Reservation from ${name}</h1>
-      <br/>
-      <p><strong>Name:</strong> ${name}</p>
-      <br/>
-      <p><strong>Email:</strong> ${email}</p>
-      <br/>
-      <p><strong>Phone:</strong> ${phone}</p>
-      <br/>
-      <p><strong>Number of Guest(s):</strong> ${guests}</p>
-      <br/>
-      <p><strong>Booking Date:</strong> ${format(new Date(date), "dd-MM-yyyy")}</p>
-      <br/>
-      <p><strong>Booking Time:</strong> ${time}</p>
-      <br/>
-      <p><strong>Special Request:</strong> ${request || "None"}</p>
+      subject: "New Table Booking",
+      text: `
+        New booking received:
+        Name: ${name}
+        Email: ${email}
+        Phone: ${phone}
+        Guests: ${guests}
+        Date: ${new Date(date).toLocaleDateString()}
+        Time: ${time}
+        Special Request: ${request || "None"}
       `,
     };
 

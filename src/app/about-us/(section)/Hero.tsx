@@ -4,9 +4,9 @@ const Hero = ({}) => {
   return (
     <section
       id="hero"
-      className="flex w-full items-center justify-center bg-[#f7f4ed] py-6 lg:py-12"
+      className="flex w-full items-center justify-center bg-[#194129] py-6 lg:py-12"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}
@@ -15,10 +15,10 @@ const Hero = ({}) => {
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
-              <h1 className="font-marcellus text-4xl font-semibold text-[#194129] md:leading-[66px] lg:text-6xl">
+              <h1 className="font-marcellus text-4xl font-semibold text-[#fff] md:leading-[66px] lg:text-6xl">
                 Welcome to Mevlana <br />A Symphony of Flavors
               </h1>
-              <p className="font-playfair font-normal text-[#679895]">
+              <p className="font-playfair font-normal text-[#fff]">
                 At Mevlana, dining is more than a meal—it`s a soulful journey.
                 Every dish is lovingly crafted with devotion, blending the
                 wisdom of tradition with the beauty of shared moments. From the

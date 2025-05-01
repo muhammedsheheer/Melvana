@@ -3,30 +3,30 @@ import Image from "next/image";
 const BavetteStory = ({}) => {
   return (
     <section
-      className="relative flex h-full w-full items-center justify-center bg-[#f7f4ed] p-4 lg:py-16"
+      className="relative flex h-full w-full items-center justify-center bg-[#194129] p-4 lg:py-16"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}
     >
       <div
-        className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#f7f4ed]"
+        className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#194129]"
         style={{
-          backgroundImage: "url('/images/aboutbg.png')",
+          backgroundImage: "url('/images/frame.png')",
           backgroundSize: "contain",
           backgroundRepeat: "repeat",
         }}
       >
-        <h2 className="text-center font-marcellus text-4xl text-[#194129] md:left-[15%] md:text-8xl">
+        <h2 className="text-center font-marcellus text-4xl text-[#fff] md:left-[15%] md:text-8xl">
           The Mevlana
           <br />
           Story
         </h2>
         <div
-          className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#f7f4ed] md:flex-row lg:px-24 lg:py-20"
+          className="flex h-full w-full flex-col items-center justify-center gap-4 bg-[#194129] md:flex-row lg:px-24 lg:py-20"
           style={{
-            backgroundImage: "url('/images/aboutbg.png')",
+            backgroundImage: "url('/images/frame.png')",
             backgroundSize: "contain",
             backgroundRepeat: "repeat",
           }}
@@ -41,12 +41,12 @@ const BavetteStory = ({}) => {
             />
           </div>
           <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
-            <h1 className="max-w-[500px] text-center font-marcellus text-4xl text-[#194129] md:text-start md:text-7xl">
+            <h1 className="max-w-[500px] text-center font-marcellus text-4xl text-[#fff] md:text-start md:text-7xl">
               From Passion
               <br />
               to Perfection{" "}
             </h1>
-            <p className="max-w-[450px] text-center font-playfair font-light leading-[160%] text-[#679895] md:text-start">
+            <p className="max-w-[450px] text-center font-playfair font-light leading-[160%] text-[#fff] md:text-start">
               What began as a vision—a quest for deeper connection through
               food—has blossomed into Mevlana, a place where flavors and souls
               intertwine. Inspired by the wisdom of Rumi, our journey is not

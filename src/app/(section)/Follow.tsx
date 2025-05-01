@@ -20,7 +20,7 @@ const imageVariants = {
 const Follow: React.FC = () => {
   return (
     <section
-      className="relative h-full w-full bg-[#f7f4ed] pb-4 pt-12"
+      className="relative h-full w-full bg-[#194129] pb-4 pt-12"
       style={{
         backgroundImage: "url('/images/aboutbg.png')",
         backgroundSize: "contain",
@@ -67,7 +67,7 @@ const Follow: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.5 }}
-              className="flex h-[300px] w-full items-center justify-center bg-[#194129] md:h-[400px] md:w-[40%]"
+              className="flex h-[300px] w-full items-center justify-center bg-[#fff] md:h-[400px] md:w-[40%]"
             >
               <h1 className="text-center font-marcellus text-7xl font-[400] uppercase leading-tight text-[#A98151] md:text-[100px] md:tracking-[-5px]">
                 SCROLL <br /> OUR <br /> STORY
@@ -81,7 +81,7 @@ const Follow: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ amount: 0.5 }}
-              className="flex h-[300px] w-full flex-col items-center justify-center gap-5 bg-[#194129] md:h-[400px] md:w-[25%]"
+              className="flex h-[300px] w-full flex-col items-center justify-center gap-5 bg-[#fff] md:h-[400px] md:w-[25%]"
             >
               <Image
                 src={"/images/home/follow/insta.svg"}

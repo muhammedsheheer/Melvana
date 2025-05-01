@@ -68,10 +68,10 @@ const Contact = ({}) => {
 
   return (
     <section
-      className="flex h-full w-full flex-col items-center justify-center bg-[#f7f4ed] pt-20 md:pt-60"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#194129] pt-20 md:pt-60"
       id="contact"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}
@@ -79,9 +79,9 @@ const Contact = ({}) => {
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
           <div
-            className="flex w-full flex-col gap-8 bg-[#f7f4ed] px-6 lg:w-1/2 lg:px-28"
+            className="flex w-full flex-col gap-8 bg-[#194129] px-6 lg:w-1/2 lg:px-28"
             style={{
-              backgroundImage: "url('/images/aboutbg.png')",
+              backgroundImage: "url('/images/frame.png')",
               backgroundSize: "contain",
               backgroundRepeat: "repeat",
             }}
@@ -90,7 +90,7 @@ const Contact = ({}) => {
               {/* <p className="font-bai text-lg leading-[4px] text-[#194129]">
                 Contact Us
               </p> */}
-              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#194129] md:leading-[50px] lg:text-5xl">
+              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#fff] md:leading-[50px] lg:text-5xl">
                 Get in
                 <br /> Touch
               </h1>
@@ -99,20 +99,20 @@ const Contact = ({}) => {
               <div className="flex gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <MapPin className="text-[#679895]" />
+                    <MapPin className="text-[#fff]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="font-playfair text-[#679895]">
+                    <p className="font-playfair text-[#fff]">
                       Horsfield St, Bolton BL3 4LU,
                       <br /> United Kingdom
                     </p>
                   </Link>
                   <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="flex items-center gap-2 text-sm text-[#679895]">
+                    <p className="flex items-center gap-2 text-sm text-[#fff]">
                       <span className="font-playfair">Get Direction</span>
-                      <ArrowRight className="text-[#679895]" />
+                      <ArrowRight className="text-[#fff]" />
                     </p>
                   </Link>
                 </div>
@@ -130,13 +130,13 @@ const Contact = ({}) => {
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Phone className="text-[#679895]" />
+                    <Phone className="text-[#fff]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link
                     href="tel:+441204860038"
-                    className="font-playfair text-[#679895]"
+                    className="font-playfair text-[#fff]"
                   >
                     +44 1204 860038{" "}
                   </Link>
@@ -147,7 +147,7 @@ const Contact = ({}) => {
                   href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
                   target="_blank"
                 >
-                  <Icons.instagram className="text-[#679895]" />
+                  <Icons.instagram className="text-[#fff]" />
                 </Link>
                 <Link
                   href={
@@ -155,10 +155,10 @@ const Contact = ({}) => {
                   }
                   target="_blank"
                 >
-                  <Icons.unknown className="text-[#679895]" />
+                  <Icons.unknown className="text-[#fff]" />
                 </Link>
                 <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                  <Icons.google className="text-[#679895]" />
+                  <Icons.google className="text-[#fff]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
                   <Icons.facebook />
@@ -167,9 +167,9 @@ const Contact = ({}) => {
             </div>
           </div>
           <div
-            className="flex w-full flex-col bg-[#f7f4ed] lg:w-1/2 lg:items-center lg:justify-center"
+            className="flex w-full flex-col bg-[#194129] lg:w-1/2 lg:items-center lg:justify-center"
             style={{
-              backgroundImage: "url('/images/aboutbg.png')",
+              backgroundImage: "url('/images/frame.png')",
               backgroundSize: "contain",
               backgroundRepeat: "repeat",
             }}
@@ -232,7 +232,7 @@ const Contact = ({}) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel className="font-playfair text-[#679895]">
+                            <FormLabel className="font-playfair text-[#fff]">
                               Reason for contacting (optional)
                             </FormLabel>
                             <FormControl>

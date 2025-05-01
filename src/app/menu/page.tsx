@@ -7,7 +7,7 @@ export default function MenuPage() {
     <section
       className="flex w-full flex-col items-center justify-start bg-menubackground"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}

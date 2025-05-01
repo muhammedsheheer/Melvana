@@ -31,8 +31,8 @@ const Highlights: React.FC = () => {
             An Elevated Turkish Dining Experience
           </h1>
         </div>
-        <div className="flex flex-col gap-6 px-4 md:flex-row md:gap-8 md:px-0">
-          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/4 md:gap-6">
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-6">
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:gap-6">
             <motion.img
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 50 }}
@@ -48,7 +48,7 @@ const Highlights: React.FC = () => {
               KARISIK IZGARA
             </h3>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/4 md:gap-6">
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:gap-6">
             <motion.img
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 50 }}
@@ -64,7 +64,7 @@ const Highlights: React.FC = () => {
               TAVUK ŞIŞ{" "}
             </h3>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/4 md:gap-6">
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:gap-6">
             <motion.img
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 50 }}
@@ -80,7 +80,7 @@ const Highlights: React.FC = () => {
               BEYTI{" "}
             </h3>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/4 md:gap-6">
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:gap-6">
             <motion.img
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 50 }}

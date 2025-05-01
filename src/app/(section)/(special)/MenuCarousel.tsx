@@ -197,6 +197,7 @@ import type {
   EmblaOptionsType,
 } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
 import React, { useCallback, useEffect, useRef } from "react";
 
 const TWEEN_FACTOR_BASE = 0.52;
@@ -313,7 +314,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               {slides.map((modelData, index) => (
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full w-full px-4 py-20">
-                    {" "}
                     <ModelBox
                       src={modelData.modelPath.glb}
                       width="400px"

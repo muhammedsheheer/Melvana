@@ -9,9 +9,9 @@ const page = ({}) => {
   return (
     <main className="relative flex h-full w-full">
       <div
-        className="flex h-full w-full flex-col items-center justify-center bg-[#f7f4ed]"
+        className="flex h-full w-full flex-col items-center justify-center bg-[#194129]"
         style={{
-          backgroundImage: "url('/images/aboutbg.png')",
+          backgroundImage: "url('/images/frame.png')",
           backgroundSize: "contain",
           backgroundRepeat: "repeat",
         }}

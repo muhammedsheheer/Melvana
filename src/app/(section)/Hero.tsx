@@ -57,10 +57,10 @@ const Hero: React.FC = () => {
         src="/videos/bg.mp4"
         poster="/images/thumbnail.png"
       />
-      <div className="absolute inset-0 bg-[rgba(0,0,0,0.43)]" />
+      <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-6 md:gap-8">
-        <h1 className="flex gap-2 text-center font-marcellus text-6xl font-[400] uppercase text-[#A98151] md:text-[150px] md:tracking-[-6px]">
+        <h1 className="z-50 flex gap-2 text-center font-marcellus text-6xl font-[400] uppercase text-[#A98151] md:text-[150px] md:tracking-[-6px]">
           {inView &&
             [...text].map((letter, i) => (
               <motion.span

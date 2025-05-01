@@ -42,13 +42,13 @@ const Story: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-full w-full bg-[#f7f4ed] px-4 py-12 md:px-14 md:py-24"
-      style={{
-        backgroundImage: "url('/images/aboutbg.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "repeat",
-      }}
+      className="relative h-full w-full bg-[#194129] px-4 py-12 md:px-14 md:py-24"
     >
+      <div className="lines z-0">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="absolute left-1/2 top-20 z-10 hidden -translate-x-1/2 md:block">
         <div className="flex flex-col items-center justify-center gap-4">
           <h6 className="font-playfair text-lg font-[400] lowercase text-[#A98151]">
@@ -82,7 +82,7 @@ const Story: React.FC = () => {
 
         <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:items-end md:justify-end">
           <motion.p
-            className="w-full max-w-[300px] text-center font-playfair text-sm font-[400] capitalize text-[#194129] md:text-right md:text-base"
+            className="w-full max-w-[300px] text-center font-playfair text-sm font-[400] capitalize text-[#fff] md:text-right md:text-base"
             variants={paragraphVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -102,7 +102,7 @@ const Story: React.FC = () => {
           />
 
           <motion.p
-            className="w-full max-w-[300px] text-center font-playfair text-sm font-[400] capitalize text-[#194129] md:text-start md:text-base"
+            className="w-full max-w-[300px] text-center font-playfair text-sm font-[400] capitalize text-[#fff] md:text-start md:text-base"
             variants={paragraphVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}

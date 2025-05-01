@@ -145,10 +145,10 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center gap-3">
-      <p className="font-marcellus text-3xl font-semibold text-[#323232]">
+      <p className="font-marcellus text-3xl font-semibold text-[#fff]">
         Request a reservation
       </p>
-      <p className="font-playfair text-[#323232]">
+      <p className="font-playfair text-[#fff]">
         Select your details and we`ll try get the best seats for you
       </p>
       <Form {...form}>
@@ -162,13 +162,13 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
               name="guests"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[#323232]">No of Guests</FormLabel>
+                  <FormLabel className="text-[#fff]">No of Guests</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger className="h-12 border-muted bg-transparent text-[#323232]">
+                      <SelectTrigger className="h-12 border-muted bg-transparent text-[#fff]">
                         <SelectValue placeholder="Select guests" />
                       </SelectTrigger>
                     </FormControl>
@@ -194,19 +194,19 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
               name="date"
               render={({ field }) => (
                 <FormItem className="">
-                  <FormLabel className="text-[#323232]">Date</FormLabel>
+                  <FormLabel className="text-[#fff]">Date</FormLabel>
                   <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
                           variant={"outline"}
-                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#323232] hover:bg-[#638D39] hover:text-[#323232]`}
+                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#fff] hover:bg-[#638D39] hover:text-[#fff]`}
                         >
-                          <CalendarIcon className="mr-2 h-4 w-4 text-[#323232]" />
+                          <CalendarIcon className="mr-2 h-4 w-4 text-[#fff]" />
                           {field.value ? (
                             format(field.value, "PPP")
                           ) : (
-                            <span className="text-[#323232]">Pick a date</span>
+                            <span className="text-[#fff]">Pick a date</span>
                           )}
                         </Button>
                       </FormControl>
@@ -237,13 +237,13 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
                 name="time"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[#323232]">Time</FormLabel>
+                    <FormLabel className="text-[#fff]">Time</FormLabel>
                     <Select
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="h-12 border-muted bg-transparent text-[#323232]">
+                        <SelectTrigger className="h-12 border-muted bg-transparent text-[#fff]">
                           <SelectValue
                             placeholder={
                               form.watch("time")
@@ -275,15 +275,15 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
           </div>
           {form.watch("date") && (
             <div className="flex w-full flex-col gap-4 py-12">
-              <p className="text-[#323232]">Choose an available time slot:</p>
+              <p className="text-[#fff]">Choose an available time slot:</p>
               <div className="custom-scrollbar grid h-[250px] grid-cols-2 gap-6 overflow-y-scroll md:grid-cols-4 lg:grid-cols-5">
                 {generateTimeSlots().map((time) => (
                   <div
                     key={time}
                     onClick={() => form.setValue("time", time)}
                     className={cn(
-                      "flex h-full w-full cursor-pointer items-center justify-center border-[1px] border-gray-800 py-4 text-[#323232]",
-                      form.watch("time") === time && "border-primary",
+                      "flex h-full w-full cursor-pointer items-center justify-center border-[1px] border-muted py-4 text-[#fff]",
+                      form.watch("time") === time && "border-[#A98151]",
                     )}
                   >
                     {time}

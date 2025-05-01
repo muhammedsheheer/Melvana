@@ -228,7 +228,7 @@ export default function MenuMobile() {
     <section
       className="flex w-full max-w-[1300px] flex-row bg-mobilebg"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}
@@ -240,7 +240,7 @@ export default function MenuMobile() {
               onClick={() => router.back()}
               className="p-0 text-menusecondary"
             >
-              <ArrowLeft className="text-[#000]" />
+              <ArrowLeft className="text-[#fff]" />
             </div>
             <Image
               src="/images/logo.png"
@@ -253,7 +253,7 @@ export default function MenuMobile() {
               onClick={() => setShowSearch((prev) => !prev)}
               className="text-menusecondary"
             >
-              <Search className="text-[#000]" />
+              <Search className="text-[#fff]" />
             </div>
           </div>
           {showSearch && (

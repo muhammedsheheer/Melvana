@@ -57,8 +57,8 @@ const Navbar = ({
               href={"/"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
               }
             >
               Home
@@ -67,8 +67,8 @@ const Navbar = ({
               href={"/menu"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
               }
             >
               Menu
@@ -77,8 +77,8 @@ const Navbar = ({
               href={""}
               className={
                 pathname === "/"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs md:text-sm font-[600] uppercase tracking-[0.96px] text-[#fff]"
+                  : "text-center font-playfair text-xs md:text-sm font-[600] uppercase tracking-[0.96px] text-[#fff]"
               }
             >
               FOOD & DRINK
@@ -87,8 +87,8 @@ const Navbar = ({
               href={"/about-us"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
               }
             >
               Our Story
@@ -98,8 +98,8 @@ const Navbar = ({
               href={"/contact"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
+                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff] md:text-sm"
               }
             >
               Contact
@@ -153,13 +153,13 @@ const EqualizerIcon: React.FC = () => {
   return (
     <div className="equalizer-icon rotate">
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
       ></div>
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
       ></div>
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#fff]")}
       ></div>
     </div>
   );

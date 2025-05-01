@@ -241,7 +241,7 @@ export default function Menu() {
     <section
       className="bg-menubg mt-8 flex w-full max-w-[1300px] flex-row"
       style={{
-        backgroundImage: "url('/images/aboutbg.png')",
+        backgroundImage: "url('/images/frame.png')",
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
       }}

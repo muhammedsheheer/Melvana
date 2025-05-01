@@ -121,9 +121,9 @@ const Contact = ({ }) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="mailto:info@vulounge.co.uk">
+                  <Link href="mailto:info@mevlanabolton.com">
                     <p className="border-b-[1px] border-b-primary text-xl text-primary">
-                      info@vulounge.co.uk
+                    info@mevlanabolton.com
                     </p>
                   </Link>
                 </div>
@@ -241,7 +241,7 @@ const Contact = ({ }) => {
           </div>
         </div>
         <div className="flex w-full flex-col">
-          <div className="flex w-full items-center justify-center bg-[#0a1315] px-4 py-6">
+          {/* <div className="flex w-full items-center justify-center bg-[#0a1315] px-4 py-6">
             <div className="border-r-[1px] border-r-primary pr-2 md:pr-6">
               <Link href={"https://www.tripadvisor.in/Restaurant_Review-g1791615-d19258647-Reviews-Vu_Lounge-Bushey_Hertfordshire_England.html"} target="_blank">
               <Image
@@ -260,9 +260,9 @@ const Contact = ({ }) => {
                 alt="tripadvisor"
               />
             </div>
-          </div>
+          </div> */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.8982009132355!2d-0.3649722239962183!3d51.643389371844535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876156c4ad8af4b%3A0xc70fe1d6707238c0!2sVu%20Lounge!5e0!3m2!1sen!2sin!4v1733298204427!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.2219811593013!2d-2.4645106!3d53.5677203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba75750cbd5b9%3A0xfcde2517b593e215!2sMevlana%2C%20Bolton!5e1!3m2!1sen!2sin!4v1746102330021!5m2!1sen!2sin"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"

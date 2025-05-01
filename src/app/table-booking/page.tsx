@@ -1,7 +1,8 @@
 import Hero from "@/app/table-booking/(section)/Hero";
 import TableBooking from "@/app/table-booking/(section)/TableBooking";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Navbar";
+import TableBookingForm from "./(section)/TableBookingForm";
 
 
 export default function HomePage() {
@@ -10,7 +11,9 @@ export default function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center bg-[#000000]">
         <Navbar position="absolute" />
         <Hero />
-        <TableBooking />
+        <div className="w-full py-10 px-4 md:px-[110px]">
+        <TableBookingForm />
+        </div>
         <Footer />
       </div>
     </main>

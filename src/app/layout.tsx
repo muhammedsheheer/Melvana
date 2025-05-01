@@ -6,10 +6,10 @@ import { Inter, Birthstone, Open_Sans, Poppins } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Vu Lounge | Premier Turkish Dining & Shisha Experience in Bushey",
-  description: "Experience the perfect fusion of fine Turkish cuisine, premium steaks, and an exclusive shisha lounge at Vu Lounge, Bushey. Indulge in a refined ambiance with exceptional hospitality.",
-  icons: [{ rel: "icon", url: "/images/home/logo.png" }],
-  keywords: "Vu Lounge, Turkish restaurant Bushey, shisha lounge, steakhouse, fine dining, premium shisha, Mediterranean cuisine"
+  title: "Mevlana",
+  description: "Experience the perfect fusion of fine Turkish cuisine, premium steaks. Indulge in a refined ambiance with exceptional hospitality.",
+  icons: [{ rel: "icon", url: "/images/logo.png" }],
+  keywords: "Mevlana, Turkish restaurant Bushey, shisha lounge, steakhouse, fine dining, premium shisha, Mediterranean cuisine"
 };
 
 const stone = Birthstone({

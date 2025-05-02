@@ -61,7 +61,7 @@ const Hero = (): JSX.Element => {
       className="relative flex w-full items-center justify-center overflow-hidden"
     >
       <div className="absolute left-0 top-0 hidden h-full w-full items-start justify-center md:flex">
-        <div className="z-30 h-full w-full ml-[108px] mr-[108px] xl:border-x-[0.25px] xl:border-x-primary"></div>
+        <div className="z-30 ml-[108px] mr-[108px] h-full w-full xl:border-x-[0.25px] xl:border-x-primary"></div>
       </div>
       <div className="relative flex min-h-[100vh] w-full items-center justify-center bg-black">
         <div
@@ -98,49 +98,48 @@ const Hero = (): JSX.Element => {
             // poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/vu-lounge-frame.png"
           ></video>
         </div>
-        {showContent && (
-          <>
-            <div className="hero-container z-50 flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-9 px-4">
-              <div className="flex w-full flex-col items-center justify-center gap-2 md:items-start">
-                <h1 className="head-hero w-full text-center font-inter text-5xl font-[200] uppercase tracking-[-5.12px] md:tracking-[10px] text-[#C9AB81] sm:text-5xl md:text-7xl lg:leading-[80px]">
-                  Welcome to
-                  <br />
-                MEVLANA
-                </h1>
-              </div>
-              <div className="flex w-full flex-col items-center justify-center gap-3 md:flex-row">
-                <Link href="/table-booking">
-                  <Button
-                    className="hero-button flex items-center justify-center gap-3 px-10 py-7"
-                    variant="image"
-                  >
-                    Book A Table
-                  </Button>
-                </Link>
-                <Link href="/menu">
-                  <Button
-                    className="hero-button flex items-center justify-center gap-3 px-10 py-7"
-                    variant="image"
-                  >
-                    Order Online
-                  </Button>
-                </Link>
-              </div>
+        <div className="absolute inset-0 z-0 bg-black/50" />
+        <>
+          <div className="hero-container z-50 flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-9 px-4">
+            <div className="flex w-full flex-col items-center justify-center gap-2 md:items-start">
+              <h1 className="head-hero w-full text-center font-inter text-5xl font-[200] uppercase tracking-[-5.12px] text-[#C9AB81] sm:text-5xl md:text-7xl md:tracking-[10px] lg:leading-[80px]">
+                Authentic Halal
+                <br />
+                Turkish Cuisine
+              </h1>
             </div>
-            <Link href="" className="absolute bottom-10 left-28 z-40">
-              <Button
-                className="down-button flex items-center justify-center gap-3 rounded-full bg-transparent px-3 text-white hover:text-black"
-                variant="ghost"
-                onClick={scrollToBottom}
-              >
-                <ArrowDown className="font-extralight text-[#e2a14b]" />
-                <span className="font-inter uppercase tracking-[2px] text-white hover:text-black">
-                  SCROLL DOWN
-                </span>
-              </Button>
-            </Link>
-          </>
-        )}
+            {/* <div className="flex w-full flex-col items-center justify-center gap-3 md:flex-row">
+              <Link href="/table-booking">
+                <Button
+                  className="hero-button flex items-center justify-center gap-3 px-10 py-7"
+                  variant="image"
+                >
+                  Book A Table
+                </Button>
+              </Link>
+              <Link href="/menu">
+                <Button
+                  className="hero-button flex items-center justify-center gap-3 px-10 py-7"
+                  variant="image"
+                >
+                  Order Online
+                </Button>
+              </Link>
+            </div> */}
+          </div>
+          <Link href="" className="absolute bottom-10 left-28 z-40">
+            <Button
+              className="down-button flex items-center justify-center gap-3 rounded-full bg-transparent px-3 text-white hover:text-black"
+              variant="ghost"
+              onClick={scrollToBottom}
+            >
+              <ArrowDown className="font-extralight text-[#e2a14b]" />
+              <span className="font-inter uppercase tracking-[2px] text-white hover:text-black">
+                SCROLL DOWN
+              </span>
+            </Button>
+          </Link>
+        </>
       </div>
     </section>
   );

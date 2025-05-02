@@ -122,6 +122,30 @@ const Navbar = ({
               className="px-0 uppercase text-accent"
             >
               <Link
+                href="/gallery"
+                className="flex items-center justify-center gap-2 text-white hover:text-primary"
+              >
+                <span>Gallery</span> <Plus className="h-4 w-4 text-primary" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant="link"
+              className="px-0 uppercase text-accent"
+            >
+              <Link
+                href="/parking"
+                className="flex items-center justify-center gap-2 text-white hover:text-primary"
+              >
+                <span>Parking</span> <Plus className="h-4 w-4 text-primary" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant="link"
+              className="px-0 uppercase text-accent"
+            >
+              <Link
                 href="/about-us"
                 className="flex items-center justify-center gap-2 text-white hover:text-primary"
               >

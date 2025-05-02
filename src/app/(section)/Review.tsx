@@ -89,12 +89,12 @@ const Reviews = ({}) => {
       <div className="absolute left-0 top-0 hidden h-full w-full items-start justify-center md:flex">
         <div className="z-30 ml-[108px] mr-[108px] h-full w-full xl:border-x-[0.25px] xl:border-x-[#FEC67961]"></div>
       </div>
-      <div className="lines">
+      {/* <div className="lines">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-      </div>
+      </div> */}
       <div className="flex h-full w-full flex-col items-start justify-center gap-4 py-12 pb-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <p className="review-one font-stone text-xl font-[200] text-primary md:-ml-[50px] md:text-3xl">

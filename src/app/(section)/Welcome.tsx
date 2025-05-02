@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import Image from "next/image";
 
-const Welcome = ({ }) => {
+const Welcome = ({}) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
@@ -108,16 +108,16 @@ const Welcome = ({ }) => {
         <div className="line"></div>
       </div>
       <div className="absolute left-0 top-0 hidden h-full w-full items-start justify-center md:flex">
-        <div className="z-30 h-full w-full ml-[108px] mr-[108px] xl:border-x-[0.25px] xl:border-x-primary"></div>
+        <div className="z-30 ml-[108px] mr-[108px] h-full w-full xl:border-x-[0.25px] xl:border-x-primary"></div>
       </div>
       <div className="relative flex h-fit w-full flex-col items-center justify-center gap-9 overflow-hidden bg-transparent px-3 py-12 lg:flex-row lg:gap-0 lg:p-0 lg:py-24">
         <div className="z-30 flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-5 lg:items-center lg:gap-9">
           <div className="flex w-full flex-col items-center justify-center gap-10 lg:w-1/2">
             <div className="flex w-full flex-col items-center justify-center gap-4">
-              <p className="welcome-one font-stone text-xl md:text-3xl font-[200] text-primary md:-ml-[50px]">
+              <p className="welcome-one font-stone text-xl font-[200] text-primary md:-ml-[50px] md:text-3xl">
                 Our Story
               </p>
-              <p className="styled_section_head non-italic flex items-center justify-center gap-3 text-center  uppercase text-primary ">
+              <p className="styled_section_head non-italic flex items-center justify-center gap-3 text-center uppercase text-primary">
                 <Image
                   src="/images/left.png"
                   alt="left"
@@ -150,15 +150,24 @@ const Welcome = ({ }) => {
           </div>
           <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
             <div className="flex flex-col items-center gap-5">
-              <p className="welcome-two w-full text-center text-[#AAA9A9] md:-ml-[50px] md:w-[530px]">
-                Mevlana offers a perfect blend of exceptional
-                cuisine and a lively atmosphere. Experience refined dining in a
-                vibrant and welcoming setting.
+              <p className="welcome-two w-full text-center capitalize text-[#AAA9A9] md:-ml-[50px] md:w-[730px]">
+                having been friends for many years, Halil (originally from Konya
+                in Turkey) & Hamid (Bolton born and bred) came together having
+                realised Bolton has a lack of good quality fully Halal
+                restaurants within a pleasant family-friendly environment. With
+                Halil’s 20+ years of restaurant experience and Hamid’s passion
+                for food, Mevlana was born, with a view to delivering high
+                quality Halal Taurkish food as you would find it in Turkey. With
+                an emphasis on using only premium quality meat and the freshest
+                of ingredients and preparing everything from scratch in-house,
+                the idea was to deliver the best possible Turkish food. From
+                smoky chargrilled meats to signature Turkish Doner to Baklava,
+                this will be a dining experience to savour.
               </p>
             </div>
           </div>
           <div className="grid w-full max-w-[1200px] grid-cols-1 items-center justify-center gap-9 md:grid-cols-3 md:justify-between">
-            <div className="w-[90%] md:w-full m-auto md:m-0 flex justify-center items-center">
+            <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/image1.png"
                 alt="right"
@@ -170,7 +179,7 @@ const Welcome = ({ }) => {
                 }}
               />
             </div>
-            <div className="w-[90%] md:w-full m-auto md:m-0 flex justify-center items-center">
+            <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/image2.png"
                 alt="right"
@@ -179,7 +188,7 @@ const Welcome = ({ }) => {
                 className="about-arrow w-full object-cover md:h-[507px] md:w-fit"
               />
             </div>
-            <div className="w-[90%] md:w-full m-auto md:m-0 flex justify-center items-center">
+            <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/image3.png"
                 alt="right"

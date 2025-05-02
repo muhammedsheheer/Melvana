@@ -51,12 +51,7 @@ const Footer = ({}) => {
                 className="text-starttext-[16px] w-fit items-center justify-start px-0 py-0 font-normal text-[#C9AB81]"
                 asChild
               >
-                <Link
-                  href="https://www.instagram.com/mevlana_bolton"
-                  target="_blank"
-                >
-                  Gallery
-                </Link>
+                <Link href="/gallery">Gallery</Link>
               </Button>
             </div>
 
@@ -81,6 +76,13 @@ const Footer = ({}) => {
                 asChild
               >
                 <Link href="/contact">Contact us</Link>
+              </Button>
+              <Button
+                variant="link"
+                className="w-fit items-center justify-start px-0 py-0 text-start text-[16px] font-normal text-[#C9AB81]"
+                asChild
+              >
+                <Link href="/parking">Parking</Link>
               </Button>
               <Button
                 variant="link"
@@ -134,7 +136,7 @@ const Footer = ({}) => {
                 Opening hours
               </p>
               <p className="font-open w-fit items-center justify-start px-0 py-0 text-center text-[16px] font-normal leading-[27px] tracking-[2px] text-[#C9AB81] md:justify-start md:text-start">
-                Mon-Thu: 11:30am-10:00pm,
+                Sun-Thu: 11:30am-10:00pm,
                 <br />
                 Fri-Sun: 11:30am-11:00pm
               </p>

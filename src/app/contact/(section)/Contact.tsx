@@ -18,6 +18,8 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { z } from "zod";
+import { FaTiktok } from "react-icons/fa";
+import { Icons } from "@/components/Icon";
 
 const FormValidation = z.object({
   first: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -31,7 +33,7 @@ const FormValidation = z.object({
 
 type FormData = z.infer<typeof FormValidation>;
 
-const Contact = ({ }) => {
+const Contact = ({}) => {
   const form = useForm<FormData>({
     resolver: zodResolver(FormValidation),
     defaultValues: {
@@ -102,29 +104,61 @@ const Contact = ({ }) => {
                 loop
                 muted
                 playsInline
-              // poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/vu-lounge-frame.png"
+                // poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/vu-lounge-frame.png"
               ></video>
             </div>
-            <p className="font-inter text-4xl font-[200] uppercase text-primary md:text-7xl z-20">
+            <p className="z-20 font-inter text-4xl font-[200] uppercase text-primary md:text-7xl">
               Contact
               <br />
               with us
             </p>
-            <div className="flex w-full flex-col items-start justify-center gap-4 bg-[#091113] px-9 py-6 md:w-[350px] z-20">
+            <div className="z-20 flex w-full flex-col items-start justify-center gap-4 bg-[#091113] px-9 py-6 md:w-[350px]">
               <p className="font-inter font-[200] uppercase text-primary">
                 Our Email
               </p>
-              <div className="flex items-center gap-2">
-                <div>
-                  <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
-                    <Mail className="text-primary" />
+              <div className="flex flex-col gap-5">
+                <div className="flex items-center gap-2">
+                  <div>
+                    <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
+                      <Mail className="text-primary" />
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <Link href="mailto:info@mevlanabolton.com">
+                      <p className="border-b-[1px] border-b-primary text-xl text-primary">
+                        info@mevlanabolton.com
+                      </p>
+                    </Link>
                   </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <Link href="mailto:info@mevlanabolton.com">
-                    <p className="border-b-[1px] border-b-primary text-xl text-primary">
-                    info@mevlanabolton.com
-                    </p>
+                <div className="flex flex-row items-center justify-center gap-3">
+                  <Link
+                    target="_blank"
+                    className="text-[#C9AB81]"
+                    href="https://www.instagram.com/mevlana_bolton"
+                  >
+                    <Icons.instagram />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    className="text-[#C9AB81]"
+                    href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
+                  >
+                    <Icons.google />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    className="text-[#C9AB81]"
+                    href="https://www.tiktok.com/@mevlanabolton"
+                  >
+                    <FaTiktok size={28} />
+                  </Link>
+                  <Link
+                    target="_blank"
+                    className="text-[#C9AB81]"
+                    href="https://www.facebook.com/profile.php?id=61560019979761"
+                  >
+                    <Icons.facebook />
                   </Link>
                 </div>
               </div>

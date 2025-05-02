@@ -170,10 +170,14 @@ const Reserve = ({}) => {
                 }}
               />
             </p>
-            <p className="reserve-two w-full text-center text-[#9c9999] md:-ml-[50px] md:max-w-[400px]">
-              Reserve your table at Mevlana for an unforgettable dining
-              experience. Ensure your spot to enjoy our exquisite dishes and
-              vibrant ambiance. Book now and let us make your visit special!
+            <p className="reserve-two w-full text-center text-[#9c9999] md:-ml-[50px] md:max-w-[500px]">
+              Whether it’s a family dinner, a meal with friends or a special
+              occasion, join us at Mevlana to enjoy the rich flavours of Turkey
+              as well as our warm hospitality. Come & enjoy our sizzling
+              charcoal grilled meats, our freshly baked bread and Pides, our
+              house-made desserts or even our freshly brewed Tea & Coffee, with
+              everything made fresh with authenticity and passion. Book your
+              table now & experience the true essence of Turkish cuisine!
             </p>
             <Link href="/table-booking">
               <Button

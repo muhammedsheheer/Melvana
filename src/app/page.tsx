@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Hero from "./(section)/Hero";
 import Welcome from "./(section)/Welcome";
 import Footer from "@/components/Footer";
@@ -44,7 +44,7 @@ export default function HomePage() {
         <Reserve />
         <Tips />
         <Reviews />
-        <Imagecontainer />
+        {/* <Imagecontainer /> */}
         {/* <Menu /> */}
         {/* <Menu /> */}
         {/* <Reservation /> */}
@@ -55,11 +55,11 @@ export default function HomePage() {
         <Contact />
         <Footer />
       </div>
-      {isScrolled &&
-        <div className="fixed bottom-6 right-2 md:bottom-[54px] md:right-[48px] z-50 flex">
+      {isScrolled && (
+        <div className="fixed bottom-6 right-2 z-50 flex md:bottom-[54px] md:right-[48px]">
           <ViewMenu />
         </div>
-      }
-    </main >
+      )}
+    </main>
   );
 }

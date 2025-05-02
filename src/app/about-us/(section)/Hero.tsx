@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Hero = ({}) => {
   return (
-    <section id="hero" className="flex w-full items-center justify-center">
+    <section
+      id="hero"
+      className="mt-10 flex w-full items-center justify-center"
+    >
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
         <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">
           <div className="flex w-full items-center justify-center lg:w-1/2">
@@ -24,13 +27,13 @@ const Hero = ({}) => {
               </p>
             </div>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-6 lg:w-1/2">
+          <div className="flex w-full flex-col items-center justify-center gap-6 md:mt-8 lg:w-1/2">
             <Image
               src="/images/about-us/2.jpg"
               width={2648}
               height={3936}
               alt="hero"
-              className="w-full object-cover md:h-[900px]"
+              className="w-full object-cover md:h-[800px]"
             />
           </div>
         </div>

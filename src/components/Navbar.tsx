@@ -34,17 +34,17 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-0 z-50 flex h-[110px] w-full flex-col items-center justify-between border-b-[0.25px] border-b-primary bg-transparent px-4 transition-all duration-0 ease-in-out`,
+        `${position} top-0 z-50 flex h-[90px] w-full flex-col border-b-[0.25px] border-b-primary bg-transparent px-4 transition-all duration-0 ease-in-out md:h-[110px]`,
         isScrolled && "border-b-0 bg-[#070d0f]",
         pathname !== "/" && "border-b-0 bg-[#070d0f]",
       )}
     >
       <div
         className={cn(
-          "relative flex h-full w-full items-center justify-between gap-2",
+          "relative hidden h-full w-full items-center justify-between gap-2 md:flex",
         )}
       >
-        <div className="absolute -left-3 flex h-[100px] top-0 items-center justify-center">
+        <div className="absolute -left-3 top-0 flex h-[100px] items-center justify-center">
           <Link href="/">
             <Image
               src="/images/logo.png"
@@ -155,6 +155,26 @@ const Navbar = ({
           </Link>
         </div>
 
+        <Sidebar>
+          <Button
+            variant="ghost"
+            className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
+          >
+            <span className="sr-only">Menu</span>
+            <EqualizerIcon />
+          </Button>
+        </Sidebar>
+      </div>
+      <div className="mt-5 flex w-full flex-row items-center justify-between md:hidden">
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            width={208}
+            height={104}
+            alt="logo"
+            className="w-24"
+          />
+        </Link>
         <Sidebar>
           <Button
             variant="ghost"

@@ -24,7 +24,7 @@ const Ambiance = ({}) => {
     });
   }, []);
   return (
-    <section className="relative flex h-fit w-full items-center justify-center overflow-y-hidden px-4 py-24 md:h-[100vh]">
+    <section className="relative flex h-fit w-full items-center justify-center overflow-y-hidden px-4 py-24">
       <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-col md:flex-row">
         <div className="h-full w-full md:w-1/2">
           <Image
@@ -88,9 +88,9 @@ const Ambiance = ({}) => {
           />
         </p>
         <p className="reserve-two w-full text-center text-[#AAA9A9] md:-ml-[50px] md:max-w-[400px]">
-          Reserve your table at Mevlana for an unforgettable dining
-          experience. Ensure your spot to enjoy our exquisite dishes and vibrant
-          ambiance. Book now and let us make your visit special!
+          Reserve your table at Mevlana for an unforgettable dining experience.
+          Ensure your spot to enjoy our exquisite dishes and vibrant ambiance.
+          Book now and let us make your visit special!
         </p>
         <Link href="/table-booking">
           <Button

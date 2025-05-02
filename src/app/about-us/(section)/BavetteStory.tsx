@@ -4,7 +4,7 @@ const BavetteStory = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center p-4 lg:py-16">
       <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#050505]">
-        <h2 className="font-playfair text-center text-8xl text-[#262626] md:left-[15%] md:text-8xl">
+        <h2 className="font-playfair text-center text-5xl text-[#C1B6A6] md:left-[15%] md:text-8xl">
           The Mevlana
           <br />
           Story
@@ -20,12 +20,12 @@ const BavetteStory = ({}) => {
             />
           </div>
           <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
-            <h1 className="font-playfair max-w-[500px] text-center text-6xl sm:text-7xl md:text-start">
+            <h1 className="font-playfair max-w-[500px] text-center text-5xl md:text-start md:text-7xl">
               From Dream
               <br />
               to Sizzle
             </h1>
-            <p className="max-w-full text-center font-light leading-[160%] text-[#C1B6A6] md:text-start">
+            <p className="max-w-full text-center font-light text-[#C1B6A6] md:text-start md:leading-[160%]">
               What began as a vision—a quest for deeper connection through
               food—has blossomed into Mevlana, a place where flavors and souls
               intertwine. Inspired by the wisdom of Rumi, our journey is not

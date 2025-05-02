@@ -46,7 +46,7 @@ const PaymentForm: FC<{
         options={{
           layout: "tabs",
           business: {
-            name: restaurant?.name ? restaurant?.name : "",
+            name: restaurant?.name ?? "",
           },
           terms: {
             card: "always",

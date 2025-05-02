@@ -156,7 +156,7 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
           onSubmit={form.handleSubmit(onSubmit)}
           className="flex w-full flex-col items-center justify-center gap-2"
         >
-          <div className="grid w-full grid-cols-1 gap-6 py-12 md:grid-cols-3">
+          <div className="grid w-full max-w-[700px] grid-cols-1 gap-6 py-12">
             <FormField
               control={form.control}
               name="guests"
@@ -200,7 +200,7 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
                       <FormControl>
                         <Button
                           variant={"outline"}
-                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#fff] hover:bg-[#638D39] hover:text-[#fff]`}
+                          className={`h-12 w-full justify-start border-muted bg-transparent text-left font-normal text-[#fff] hover:bg-[#000000] hover:text-[#fff]`}
                         >
                           <CalendarIcon className="mr-2 h-4 w-4 text-[#fff]" />
                           {field.value ? (

@@ -80,7 +80,7 @@ const ConnectWithUs = ({}) => {
       className="relative flex w-full items-center justify-center overflow-hidden bg-transparent"
     >
       <div className="absolute left-0 top-0 hidden h-full w-full items-start justify-center md:flex">
-        <div className="z-30 h-full w-full ml-[108px] mr-[108px] xl:border-x-[0.25px] xl:border-x-primary"></div>
+        <div className="z-30 ml-[108px] mr-[108px] h-full w-full xl:border-x-[0.25px] xl:border-x-primary"></div>
       </div>
       <div className="lines">
         <div className="line"></div>
@@ -99,10 +99,10 @@ const ConnectWithUs = ({}) => {
       <div className="flex max-w-[1250px] flex-col gap-12 px-4 py-12 lg:px-0 lg:py-24">
         <div className="flex w-full flex-col items-center justify-center lg:flex-row">
           <div className="flex w-full flex-col items-center justify-center gap-3">
-            <p className="connect-one font-stone text-xl md:text-3xl font-[200] text-primary md:-ml-[50px]">
+            <p className="connect-one font-stone text-xl font-[200] text-primary md:-ml-[50px] md:text-3xl">
               Follow us
             </p>
-            <p className="styled_section_head non-italic flex items-center justify-center gap-3 text-center uppercase text-primary ">
+            <p className="styled_section_head non-italic flex items-center justify-center gap-3 text-center uppercase text-primary">
               <Image
                 src="/images/left.png"
                 alt="left"
@@ -243,7 +243,7 @@ const ConnectWithUs = ({}) => {
           <div className="absolute top-[270px] z-40 flex w-full justify-center">
             <Link href="https://www.instagram.com/vulounge?igsh=MXNveGEzZnhsNzJhYg==">
               <Button
-                className=" text-white  flex items-center justify-center gap-3 px-10 py-7 uppercase"
+                className="flex items-center justify-center gap-3 px-10 py-7 uppercase text-white"
                 variant="imageInverted"
               >
                 Follow Us On Instagram
@@ -255,14 +255,14 @@ const ConnectWithUs = ({}) => {
         <div className="relative flex w-full flex-col items-center justify-center gap-3 md:hidden">
           <div className="grid w-full grid-cols-1 gap-3">
             <Image
-              src="/images/home/connect/image1.png"
+              src="/images/home/gallery/image5.png"
               width={380}
               height={395}
               alt="alt"
               className="z-30 max-h-[250px] object-cover md:h-[300px] lg:max-h-[400px]"
             />
             <Image
-              src="/images/home/connect/image2.png"
+              src="/images/home/gallery/image6.png"
               width={380}
               height={395}
               alt="alt"
@@ -271,8 +271,8 @@ const ConnectWithUs = ({}) => {
           </div>
           <div className="absolute z-40 flex w-full justify-center">
             <Link href="https://www.instagram.com/vulounge?igsh=MXNveGEzZnhsNzJhYg==">
-            <Button
-                className=" text-white  flex items-center justify-center gap-3 px-10 py-7 uppercase"
+              <Button
+                className="flex items-center justify-center gap-3 px-10 py-7 uppercase text-white"
                 variant="imageInverted"
               >
                 Follow Us On Instagram

@@ -241,7 +241,10 @@ const ConnectWithUs = ({}) => {
             /> */}
           </div>
           <div className="absolute top-[270px] z-40 flex w-full justify-center">
-            <Link href="https://www.instagram.com/vulounge?igsh=MXNveGEzZnhsNzJhYg==">
+            <Link
+              href="https://www.instagram.com/mevlana_bolton"
+              target="_blank"
+            >
               <Button
                 className="flex items-center justify-center gap-3 px-10 py-7 uppercase text-white"
                 variant="imageInverted"
@@ -270,7 +273,10 @@ const ConnectWithUs = ({}) => {
             />
           </div>
           <div className="absolute z-40 flex w-full justify-center">
-            <Link href="https://www.instagram.com/vulounge?igsh=MXNveGEzZnhsNzJhYg==">
+            <Link
+              href="https://www.instagram.com/mevlana_bolton"
+              target="_blank"
+            >
               <Button
                 className="flex items-center justify-center gap-3 px-10 py-7 uppercase text-white"
                 variant="imageInverted"

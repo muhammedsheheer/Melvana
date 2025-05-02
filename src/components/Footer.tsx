@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Icons } from "./Icon";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = ({}) => {
   return (
@@ -51,7 +52,7 @@ const Footer = ({}) => {
                 asChild
               >
                 <Link
-                  href="https://www.instagram.com/mevlana_bolton/?hl=en"
+                  href="https://www.instagram.com/mevlana_bolton"
                   target="_blank"
                 >
                   Gallery
@@ -86,7 +87,10 @@ const Footer = ({}) => {
                 className="w-fit items-center justify-start px-0 py-0 text-start text-[16px] font-normal text-[#C9AB81]"
                 asChild
               >
-                <Link href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9">
+                <Link
+                  target="_blank"
+                  href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
+                >
                   Find us
                 </Link>
               </Button>
@@ -109,6 +113,7 @@ const Footer = ({}) => {
               </p>
               <Link
                 href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
+                target="_blank"
                 className="font-open w-fit items-center justify-center px-0 py-0 text-center text-[16px] font-normal leading-[27px] tracking-[2px] text-[#C9AB81] md:justify-start md:text-start"
               >
                 Horsfield St, Bolton BL3 4LU, United Kingdom
@@ -149,20 +154,30 @@ const Footer = ({}) => {
         </div>
         <div className="mb-3 mt-6 flex w-full items-center justify-center gap-4 md:w-1/3">
           <Link
+            target="_blank"
             className="text-[#C9AB81]"
-            href="https://www.facebook.com/p/Mevlana-Bolton-61560019979761/"
+            href="https://www.instagram.com/mevlana_bolton"
           >
             <Icons.instagram />
           </Link>
           <Link
+            target="_blank"
             className="text-[#C9AB81]"
             href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
           >
             <Icons.google />
           </Link>
           <Link
+            target="_blank"
             className="text-[#C9AB81]"
-            href="https://www.facebook.com/p/Mevlana-Bolton-61560019979761/"
+            href="https://www.tiktok.com/@mevlanabolton"
+          >
+            <FaTiktok size={28} />
+          </Link>
+          <Link
+            target="_blank"
+            className="text-[#C9AB81]"
+            href="https://www.facebook.com/profile.php?id=61560019979761"
           >
             <Icons.facebook />
           </Link>

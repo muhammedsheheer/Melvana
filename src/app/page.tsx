@@ -12,10 +12,10 @@ import Ambiance from "./(section)/Ambiance";
 import Tips from "./(section)/Tips";
 import { VideoCarousel } from "./(section)/Videos";
 import Menu from "./(section)/Menu";
-import Special from "./(section)/Special";
 import ViewMenu from "@/components/floating-buttons/ViewMenu";
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import Special from "./(section)/(special)/Special";
 
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);

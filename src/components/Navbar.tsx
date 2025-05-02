@@ -1,13 +1,11 @@
 "use client";
-import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BetaMenuActive } from "@/lib/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { Clock, Mail, MapPin, Phone, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import Sidebar from "./SideBar";
 
 const Navbar = ({

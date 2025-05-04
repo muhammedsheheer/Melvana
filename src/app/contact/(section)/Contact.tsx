@@ -130,6 +130,13 @@ const Contact = ({}) => {
                       </p>
                     </Link>
                   </div>
+                  <div className="flex flex-col gap-4">
+                    <Link href="tel:+441204860038">
+                      <p className="border-b-[1px] border-b-primary text-xl text-primary">
+                        +441204860038
+                      </p>
+                    </Link>
+                  </div>
                 </div>
                 <div className="flex flex-row items-center justify-center gap-3">
                   <Link

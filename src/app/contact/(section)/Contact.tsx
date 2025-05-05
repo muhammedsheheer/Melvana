@@ -114,7 +114,7 @@ const Contact = ({}) => {
             </p>
             <div className="z-20 flex w-full flex-col items-start justify-center gap-4 bg-[#091113] px-9 py-6 md:w-[350px]">
               <p className="font-inter font-[200] uppercase text-primary">
-                Our Email
+                Our Contact
               </p>
               <div className="flex flex-col gap-5">
                 <div className="flex items-center gap-2">
@@ -127,6 +127,21 @@ const Contact = ({}) => {
                     <Link href="mailto:info@mevlanabolton.com">
                       <p className="border-b-[1px] border-b-primary text-xl text-primary">
                         info@mevlanabolton.com
+                      </p>
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-5">
+                <div className="flex items-center gap-2">
+                  <div>
+                    <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
+                      <Mail className="text-primary" />
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <Link href="tel:+441204860038>
+                      <p className="border-b-[1px] border-b-primary text-xl text-primary">
+                        +441204860038
                       </p>
                     </Link>
                   </div>

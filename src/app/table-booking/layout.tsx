@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { FC } from "react";
 
 export const metadata: Metadata = {
-  title: "Gallery Mevlana",
+  title: "Table Booking Mevlana",
 
   icons: [{ rel: "icon", url: "/images/home/logo.png" }],
   keywords:

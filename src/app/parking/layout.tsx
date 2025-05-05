@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import type { FC } from "react";
 
 export const metadata: Metadata = {
-  title: "Contact Vu Lounge | Book Your Table or Shisha Lounge Experience",
-  description:
-    "Get in touch with Vu Lounge for reservations, event bookings, or inquiries. Call us, email, or visit our location in Bushey for a premium dining and shisha experience.",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  title: "Parking Mevlana",
+
+  icons: [{ rel: "icon", url: "/images/home/logo.png" }],
   keywords:
-    "contact Vu Lounge, Vu Lounge Bushey reservations, book table Bushey, Turkish restaurant contact",
+    "Mevlana, Turkish restaurant Bushey, shisha lounge, steakhouse, fine dining, premium shisha, Mediterranean cuisine",
 };
 
 const layout: FC<{

@@ -132,49 +132,50 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-5">
-                <div className="flex items-center gap-2">
-                  <div>
-                    <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
-                      <Mail className="text-primary" />
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <div className="h-fit w-fit rounded-full bg-[#172529] p-2">
+                        <Mail className="text-primary" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                      <Link href="tel:+441204860038">
+                        <p className="border-b-[1px] border-b-primary text-xl text-primary">
+                          +441204860038
+                        </p>
+                      </Link>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-4">
-                    <Link href="tel:+441204860038>
-                      <p className="border-b-[1px] border-b-primary text-xl text-primary">
-                        +441204860038
-                      </p>
+                  <div className="flex flex-row items-center justify-center gap-3">
+                    <Link
+                      target="_blank"
+                      className="text-[#C9AB81]"
+                      href="https://www.instagram.com/mevlana_bolton"
+                    >
+                      <Icons.instagram />
+                    </Link>
+                    <Link
+                      target="_blank"
+                      className="text-[#C9AB81]"
+                      href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
+                    >
+                      <Icons.google />
+                    </Link>
+                    <Link
+                      target="_blank"
+                      className="text-[#C9AB81]"
+                      href="https://www.tiktok.com/@mevlanabolton"
+                    >
+                      <FaTiktok size={28} />
+                    </Link>
+                    <Link
+                      target="_blank"
+                      className="text-[#C9AB81]"
+                      href="https://www.facebook.com/profile.php?id=61560019979761"
+                    >
+                      <Icons.facebook />
                     </Link>
                   </div>
-                </div>
-                <div className="flex flex-row items-center justify-center gap-3">
-                  <Link
-                    target="_blank"
-                    className="text-[#C9AB81]"
-                    href="https://www.instagram.com/mevlana_bolton"
-                  >
-                    <Icons.instagram />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    className="text-[#C9AB81]"
-                    href="https://maps.app.goo.gl/GHVEYTBA5uk8voWR9"
-                  >
-                    <Icons.google />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    className="text-[#C9AB81]"
-                    href="https://www.tiktok.com/@mevlanabolton"
-                  >
-                    <FaTiktok size={28} />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    className="text-[#C9AB81]"
-                    href="https://www.facebook.com/profile.php?id=61560019979761"
-                  >
-                    <Icons.facebook />
-                  </Link>
                 </div>
               </div>
             </div>
@@ -289,27 +290,7 @@ const Contact = ({}) => {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-col">
-          {/* <div className="flex w-full items-center justify-center bg-[#0a1315] px-4 py-6">
-            <div className="border-r-[1px] border-r-primary pr-2 md:pr-6">
-              <Link href={"https://www.tripadvisor.in/Restaurant_Review-g1791615-d19258647-Reviews-Vu_Lounge-Bushey_Hertfordshire_England.html"} target="_blank">
-              <Image
-                src="/images/tripadvisor.png"
-                width={272}
-                height={57}
-                alt="tripadvisor"
-              />
-              </Link>
-            </div>
-            <div className="pl-2 md:pl-6">
-              <Image
-                src="/images/design-my-night.png"
-                width={220}
-                height={56}
-                alt="tripadvisor"
-              />
-            </div>
-          </div> */}
+        <div className="flex w-full flex-col px-0 md:px-20">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.2219811593013!2d-2.4645106!3d53.5677203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba75750cbd5b9%3A0xfcde2517b593e215!2sMevlana%2C%20Bolton!5e1!3m2!1sen!2sin!4v1746102330021!5m2!1sen!2sin"
             style={{ border: 0 }}

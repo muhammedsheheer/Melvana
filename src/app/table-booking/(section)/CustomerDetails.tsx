@@ -70,7 +70,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
           </div>
         </div>
       </div>
-      <p className="w-full font-marcellus text-2xl font-semibold text-[#fff]">
+      <p className="font-marcellus w-full text-2xl font-semibold text-[#fff]">
         Complete your request
       </p>
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -122,27 +122,6 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
                   className="h-12 border-muted bg-transparent text-[#fff]"
                 />
               </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="place"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="text-[#fff]">Place</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger className="h-12 border-muted bg-transparent text-[#fff]">
-                    <SelectValue placeholder="Select Booking Place" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent className="max-h-[300px] text-[#fff]">
-                  <SelectItem value="Terrace">Terrace</SelectItem>
-                  <SelectItem value="Restaurent">Restaurent</SelectItem>
-                </SelectContent>
-              </Select>
               <FormMessage />
             </FormItem>
           )}

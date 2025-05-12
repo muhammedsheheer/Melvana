@@ -170,7 +170,7 @@ const Welcome = ({}) => {
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/1.jpg"
-                alt="right"
+                alt="image1"
                 width={407}
                 height={570}
                 className="about-arrow w-full object-cover md:h-[507px] md:w-fit"
@@ -182,7 +182,7 @@ const Welcome = ({}) => {
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/2.jpg"
-                alt="right"
+                alt="image2"
                 width={407}
                 height={570}
                 className="about-arrow w-full object-cover md:h-[507px] md:w-fit"
@@ -191,7 +191,7 @@ const Welcome = ({}) => {
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
                 src="/images/home/highlights/4.jpg"
-                alt="right"
+                alt="image3"
                 width={407}
                 height={570}
                 className="about-arrow w-full object-cover md:h-[507px] md:w-fit"

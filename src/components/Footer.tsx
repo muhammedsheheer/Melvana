@@ -120,8 +120,12 @@ const Footer = ({}) => {
               >
                 Horsfield St, Bolton BL3 4LU, United Kingdom
                 <br />
+              </Link>
+              <Link
+                href="mailto:info@mevlanabolton.com"
+                className="font-open -mt-[8px] w-fit items-center justify-center px-0 py-0 text-center text-[16px] font-normal lowercase leading-[27px] tracking-[2px] text-[#C9AB81] md:justify-start md:text-start"
+              >
                 info@mevlanabolton.com
-                <br />
               </Link>
               <Link
                 href="tel:+441204860038"

@@ -169,7 +169,7 @@ const Welcome = ({}) => {
           <div className="grid w-full max-w-[1200px] grid-cols-1 items-center justify-center gap-9 md:grid-cols-3 md:justify-between">
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/highlights/image1.png"
+                src="/images/home/highlights/1.jpg"
                 alt="right"
                 width={407}
                 height={570}
@@ -181,7 +181,7 @@ const Welcome = ({}) => {
             </div>
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/highlights/image2.png"
+                src="/images/home/highlights/2.jpg"
                 alt="right"
                 width={407}
                 height={570}
@@ -190,7 +190,7 @@ const Welcome = ({}) => {
             </div>
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/highlights/image3.png"
+                src="/images/home/highlights/4.jpg"
                 alt="right"
                 width={407}
                 height={570}
